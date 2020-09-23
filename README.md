@@ -8,7 +8,7 @@
 ## *(Covid project initiative)* 
 For sports clubs. Manage the presence of players during training sessions and supporters during matches.
 
-# Project state
+# Project status
 The project is under development. There is no production-ready version.
 
 # Installation
