@@ -1,12 +1,16 @@
-<p align="center">
-  <a rel="noopener" target="_blank"><img width="150" src="https://avatars1.githubusercontent.com/u/71756705?u=65291ea35d5daae39969cf3a817efcd28ebcfcf2&v=4" alt="elloow logo"></a></p>
-</p>
+<div align="center">
+
+<img src="https://avatars1.githubusercontent.com/u/71756705?u=65291ea35d5daae39969cf3a817efcd28ebcfcf2&v=4"  alt="elloow logo" width="150"></img>
 
 ![CI](https://github.com/elloow/api/workflows/CI/badge.svg?event=push)
 
 # elloow (API)
 #### *(Covid project initiative)* 
 For sports clubs. Manage the presence of players during training sessions and supporters during matches.
+
+</div>
+
+<br>
 
 # Project status
 The project is under development. There is no production-ready version.
