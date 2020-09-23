@@ -5,7 +5,7 @@
 ![CI](https://github.com/elloow/api/workflows/CI/badge.svg?event=push)
 
 # elloow
-## *(Covid project initiative)* 
+#### *(Covid project initiative)* 
 For sports clubs. Manage the presence of players during training sessions and supporters during matches.
 
 # Project status
