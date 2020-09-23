@@ -12,6 +12,6 @@ Route.any('*', async ({ response }: HttpContextContract) => {
   return response
     .status(404)
     .send(
-      'Page not found'
+      'Resource not found'
     )
 })
