@@ -2,11 +2,15 @@
 
 <img src="https://avatars1.githubusercontent.com/u/71756705?u=65291ea35d5daae39969cf3a817efcd28ebcfcf2&v=4"  alt="elloow logo" width="150"></img>
 
-![CI](https://github.com/elloow/api/workflows/CI/badge.svg?event=push)
-
-# elloow (API)
+# elloow
 #### *(Covid project initiative)* 
 For sports clubs. Manage the presence of players during training sessions and supporters during matches.
+
+Server side project built with [AdonisJS](https://github.com/adonisjs)
+
+<br>
+
+![CI](https://github.com/elloow/elloow/workflows/CI/badge.svg?event=push) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
