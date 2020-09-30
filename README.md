@@ -20,31 +20,7 @@ Server side project built with [AdonisJS](https://github.com/adonisjs)
 The project is under development. There is no production-ready version.
 
 # Installation
-
-## Clone repo
-```bash
-$ git clone https://github.com/elloow/elloow.git
-```
-
-## Create `.env` file 
-Copy paste `.env.example` and change default values based on your infrastructure.
-
-## Build application
-```bash
-$ yarn
-
-$ yarn build
-```
-
-## Run migrations
-```bash
-$ node ace migration:run
-```
-
-## Run server 
-```bash
-$ yarn start
-```
+Follow steps on the [wiki page](https://github.com/elloow/elloow/wiki/Installation)
 
 # License
 This project is licensed under the terms of the [MIT license](https://github.com/elloow/elloow/blob/master/LICENSE).
