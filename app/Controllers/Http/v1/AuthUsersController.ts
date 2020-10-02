@@ -5,15 +5,16 @@ import User from 'App/Models/User'
 export default class AuthUsersController {
   public async login ({ auth, request, response }: HttpContextContract) {
     const userAuth = auth.use('v1_user')
-    const userData = request.only(['username', 'password'])
+    const userData = request.only(['email', 'password'])
 
     try {
-      await userAuth.attempt(userData.username, userData.password)
+      await userAuth.attempt(userData.email, userData.password)
     } catch (error) {
       return response.status(401).send(Answer.fail('Bad credentials', 'LOGIN_FAILED'))
     }
 
     const user = userAuth.user as User
+    await user.preload('role')
 
     return response.send(Answer.success({ user: user }))
   }
@@ -21,9 +22,7 @@ export default class AuthUsersController {
   public async logout ({ auth, response }: HttpContextContract) {
     const userAuth = auth.use('v1_user')
 
-    try {
-      await userAuth.logout()
-    } catch (error) { }
+    await userAuth.logout()
 
     return response.send(Answer.success({}))
   }

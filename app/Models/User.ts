@@ -4,7 +4,10 @@ import {
   column,
   beforeSave,
   BaseModel,
+  belongsTo,
+  BelongsTo,
 } from '@ioc:Adonis/Lucid/Orm'
+import UserRole from './UserRole'
 
 export default class User extends BaseModel {
   @column({ isPrimary: true })
@@ -13,8 +16,14 @@ export default class User extends BaseModel {
   @column()
   public email: string
 
-  @column()
+  @column({ serializeAs: null })
   public password: string
+
+  @column({ serializeAs: null })
+  public userRoleId: number
+
+  @belongsTo(() => UserRole)
+  public role: BelongsTo<typeof UserRole>
 
   @column()
   public rememberMeToken?: string
