@@ -11,6 +11,6 @@ export default class CreateDefaultRoles extends BaseSchema {
   }
 
   public async down () {
-    await UserRole.query().whereIn('name', ['admin', 'manager', 'basic']).delete()
+    await UserRole.query().delete()
   }
 }
