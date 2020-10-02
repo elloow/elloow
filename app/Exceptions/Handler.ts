@@ -15,9 +15,19 @@
 
 import Logger from '@ioc:Adonis/Core/Logger'
 import HttpExceptionHandler from '@ioc:Adonis/Core/HttpExceptionHandler'
+import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+import Env from '@ioc:Adonis/Core/Env'
+import Answer from 'App/Helpers/Answer'
 
 export default class ExceptionHandler extends HttpExceptionHandler {
   constructor () {
     super(Logger)
+  }
+
+  public async handle (error, ctx: HttpContextContract) {
+    if (Env.get('NODE_ENV', '') === 'production') {
+      return ctx.response.status(500).send(Answer.fail('An unexpected error occurred', 'SERVER_ERROR'))
+    }
+    return super.handle(error, ctx)
   }
 }

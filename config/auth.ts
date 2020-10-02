@@ -18,7 +18,7 @@ import { AuthConfig } from '@ioc:Adonis/Addons/Auth'
 |
 */
 const authConfig: AuthConfig = {
-  guard: 'web',
+  guard: 'v1_user',
   list: {
     /*
     |--------------------------------------------------------------------------
@@ -30,7 +30,7 @@ const authConfig: AuthConfig = {
     | use web guard with session driver
     |
     */
-    web: {
+    v1_user: {
       driver: 'session',
 
       provider: {
