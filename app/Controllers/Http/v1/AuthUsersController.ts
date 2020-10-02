@@ -17,4 +17,14 @@ export default class AuthUsersController {
 
     return response.send(Answer.success({ user: user }))
   }
+
+  public async logout ({ auth, response }: HttpContextContract) {
+    const userAuth = auth.use('v1_user')
+
+    try {
+      await userAuth.logout()
+    } catch (error) { }
+
+    return response.send(Answer.success({}))
+  }
 }

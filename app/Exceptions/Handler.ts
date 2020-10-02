@@ -24,8 +24,9 @@ export default class ExceptionHandler extends HttpExceptionHandler {
     super(Logger)
   }
 
-  public async handle (error, ctx: HttpContextContract) {
+  public async handle (error: any, ctx: HttpContextContract) {
     if (Env.get('NODE_ENV', '') === 'production') {
+      Logger.error(error.message)
       return ctx.response.status(500).send(Answer.fail('An unexpected error occurred', 'SERVER_ERROR'))
     }
     return super.handle(error, ctx)

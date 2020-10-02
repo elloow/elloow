@@ -6,6 +6,7 @@ Route.group(() => {
   })
 
   Route.group(() => {
-    Route.post('/', 'v1/AuthUsersController.login')
+    Route.post('/user', 'v1/AuthUsersController.login')
+    Route.post('/user/logout', 'v1/AuthUsersController.logout')
   }).prefix('/auth')
 }).prefix('v1')
