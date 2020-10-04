@@ -16,6 +16,15 @@ Server side project built with [AdonisJS](https://github.com/adonisjs)
 
 <br>
 
+# Introduction
+Elloow is an initiative to help sports clubs during times of pandemic. 
+
+Manage the presence of players during training sessions and supporters during matches.
+
+The Elloow Suite consists of:
+- **[Elloow Backend API](https://github.com/elloow/elloow)** - Service working with sql datbases & redis to provide all needed data to admin application and provide secure access to data.
+- **[Elloow Admin UI](https://github.com/elloow/elloow-front)** - A friendly admin interface built with Vue.js working with the backend api to manage teams, create events, export participants, ...
+
 # Project status
 The project is under development. There is no production-ready version.
 
