@@ -5,9 +5,12 @@ import {
   beforeSave,
   BaseModel,
   belongsTo,
+  manyToMany,
+  ManyToMany,
   BelongsTo,
 } from '@ioc:Adonis/Lucid/Orm'
 import UserRole from './UserRole'
+import Organisation from './Organisation'
 
 export default class User extends BaseModel {
   @column({ isPrimary: true })
@@ -24,6 +27,9 @@ export default class User extends BaseModel {
 
   @belongsTo(() => UserRole)
   public role: BelongsTo<typeof UserRole>
+
+  @manyToMany(() => Organisation, { pivotTable: 'affiliations' })
+  public organisations: ManyToMany<typeof Organisation>
 
   @column()
   public rememberMeToken?: string

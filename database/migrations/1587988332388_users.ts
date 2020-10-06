@@ -12,7 +12,7 @@ export default class UsersSchema extends BaseSchema {
         .references('id')
         .inTable('user_roles')
         .onDelete('CASCADE')
-      table.string('email', 255).notNullable()
+      table.string('email', 255).notNullable().unique()
       table.string('password', 180).notNullable()
       table.string('remember_me_token').nullable()
       table.timestamps(true)

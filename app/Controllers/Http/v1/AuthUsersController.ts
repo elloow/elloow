@@ -14,7 +14,9 @@ export default class AuthUsersController {
     }
 
     const user = userAuth.user as User
+
     await user.preload('role')
+    await user.preload('organisations')
 
     return response.send(Answer.success({ user: user }))
   }
