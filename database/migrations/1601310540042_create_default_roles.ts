@@ -5,7 +5,6 @@ export default class CreateDefaultRoles extends BaseSchema {
   public async up () {
     await UserRole.createMany([
       { name: 'admin' },
-      { name: 'manager' },
       { name: 'basic' },
     ])
   }
