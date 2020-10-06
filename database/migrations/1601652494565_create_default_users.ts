@@ -14,6 +14,6 @@ export default class CreateDefaultUsers extends BaseSchema {
   }
 
   public async down () {
-    await User.query().delete()
+    await User.query().where('email', 'hello@crbast.ch').delete()
   }
 }
