@@ -10,6 +10,9 @@ export default class Session extends BaseModel {
   @column()
   public date: Date
 
+  @column()
+  public groupId: number
+
   @belongsTo(() => Group)
   public group: BelongsTo<typeof Group>
 

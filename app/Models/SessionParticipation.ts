@@ -5,6 +5,12 @@ export default class SessionParticipation extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
+  @column()
+  public sessionId: number
+
+  @column()
+  public sessionParticipantId: number
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 

@@ -13,6 +13,9 @@ export default class Group extends BaseModel {
   @column()
   public publicCode: string
 
+  @column()
+  public organisationId: number
+
   @belongsTo(() => Organisation)
   public organisation: BelongsTo<typeof Organisation>
 

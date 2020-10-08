@@ -10,6 +10,12 @@ export default class Affiliation extends BaseModel {
   @column()
   public rights: string
 
+  @column()
+  public userId: number
+
+  @column()
+  public organisationId: number
+
   @belongsTo(() => User)
   public user: BelongsTo<typeof User>
 
