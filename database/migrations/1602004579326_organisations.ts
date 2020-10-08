@@ -7,6 +7,7 @@ export default class Organisations extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
       table.string('name').notNullable().unique()
+      table.integer('user_id').unsigned().references('id').inTable('users').onDelete('CASCADE')
       table.timestamps(true)
     })
   }
