@@ -27,7 +27,7 @@
     "luxon": "^1.25.0",
     "mysql": "^2.18.1",
     "oracledb": "^5.0.0",
-    "pg": "^8.3.3",
+    "pg": "^8.4.0",
     "phc-argon2": "^1.0.10",
     "proxy-addr": "^2.0.6",
     "reflect-metadata": "^0.1.13",
