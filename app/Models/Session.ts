@@ -1,20 +1,16 @@
 import { DateTime } from 'luxon'
 import { BaseModel, BelongsTo, belongsTo, column } from '@ioc:Adonis/Lucid/Orm'
-import User from './User'
-import Organisation from './Organisation'
+import Group from './Group'
 
-export default class Affiliation extends BaseModel {
+export default class Session extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
   @column()
-  public rights: string
+  public date: Date
 
-  @belongsTo(() => User)
-  public user: BelongsTo<typeof User>
-
-  @belongsTo(() => Organisation)
-  public organisation: BelongsTo<typeof Organisation>
+  @belongsTo(() => Group)
+  public group: BelongsTo<typeof Group>
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
