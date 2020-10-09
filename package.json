@@ -21,7 +21,7 @@
   "dependencies": {
     "@adonisjs/ace": "^6.0.0",
     "@adonisjs/auth": "^4.3.1",
-    "@adonisjs/core": "^5.0.0-preview-rc",
+    "@adonisjs/core": "^5.0.0-preview.5",
     "@adonisjs/fold": "^6.0.0",
     "@adonisjs/lucid": "^8.4.3",
     "@adonisjs/session": "^3.1.2",
