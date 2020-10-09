@@ -22,6 +22,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Compile Typescript
+        run: |
+          yarn
+          yarn ts-build
+
       - name: Basic application build
         run: |
           yarn
