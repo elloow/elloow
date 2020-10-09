@@ -14,7 +14,7 @@
     "eslint-plugin-adonis": "^1.0.15",
     "pino-pretty": "^4.2.1",
     "typescript": "^4.0.3",
-    "youch": "^2.0.10",
+    "youch": "^2.1.1",
     "youch-terminal": "^1.0.0"
   },
   "dependencies": {
