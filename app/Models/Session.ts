@@ -7,8 +7,8 @@ export default class Session extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
-  @column()
-  public date: Date
+  @column.date()
+  public date: DateTime
 
   @column()
   public groupId: number
