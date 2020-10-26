@@ -9,7 +9,7 @@
     "ts-build": "tsc"
   },
   "devDependencies": {
-    "@adonisjs/assembler": "^2.0.0",
+    "@adonisjs/assembler": "^3.0.1",
     "adonis-preset-ts": "^1.0.4",
     "eslint": "^7.12.0",
     "eslint-plugin-adonis": "^1.0.15",
