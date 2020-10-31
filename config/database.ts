@@ -20,7 +20,7 @@ const databaseConfig: DatabaseConfig & { orm: Partial<OrmConfig> } = {
   | file.
   |
   */
-  connection: Env.get('DB_CONNECTION', 'mysql') as string,
+  connection: Env.get('DB_CONNECTION'),
 
   connections: {
     /*
@@ -37,14 +37,16 @@ const databaseConfig: DatabaseConfig & { orm: Partial<OrmConfig> } = {
     mysql: {
       client: 'mysql',
       connection: {
-        host: Env.get('DB_HOST', '127.0.0.1') as string,
-        port: Number(Env.get('DB_PORT', 3306)),
-        user: Env.get('DB_USER', 'lucid') as string,
-        password: Env.get('DB_PASSWORD', 'lucid') as string,
-        database: Env.get('DB_NAME', 'lucid') as string,
+        host: Env.get('MYSQL_HOST'),
+        port: Env.get('MYSQL_PORT'),
+        user: Env.get('MYSQL_USER'),
+        password: Env.get('MYSQL_PASSWORD', ''),
+        database: Env.get('MYSQL_DB_NAME'),
       },
       healthCheck: false,
+      debug: false,
     },
+
     /*
     |--------------------------------------------------------------------------
     | PostgreSQL config
@@ -59,14 +61,40 @@ const databaseConfig: DatabaseConfig & { orm: Partial<OrmConfig> } = {
     pg: {
       client: 'pg',
       connection: {
-        host: Env.get('DB_HOST', '127.0.0.1') as string,
-        port: Number(Env.get('DB_PORT', 5432)),
-        user: Env.get('DB_USER', 'lucid') as string,
-        password: Env.get('DB_PASSWORD', 'lucid') as string,
-        database: Env.get('DB_NAME', 'lucid') as string,
+        host: Env.get('PG_HOST'),
+        port: Env.get('PG_PORT'),
+        user: Env.get('PG_USER'),
+        password: Env.get('PG_PASSWORD', ''),
+        database: Env.get('PG_DB_NAME'),
       },
       healthCheck: false,
+      debug: false,
     },
+
+    /*
+    |--------------------------------------------------------------------------
+    | OracleDB config
+    |--------------------------------------------------------------------------
+    |
+    | Configuration for Oracle database. Make sure to install the driver
+    | from npm when using this connection
+    |
+    | npm i oracledb
+    |
+    */
+    oracle: {
+      client: 'oracledb',
+      connection: {
+        host: Env.get('ORACLE_HOST'),
+        port: Env.get('ORACLE_PORT'),
+        user: Env.get('ORACLE_USER'),
+        password: Env.get('ORACLE_PASSWORD', ''),
+        database: Env.get('ORACLE_DB_NAME'),
+      },
+      healthCheck: false,
+      debug: false,
+    },
+
   },
 
   /*

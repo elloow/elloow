@@ -9,7 +9,7 @@
     "ts-build": "tsc"
   },
   "devDependencies": {
-    "@adonisjs/assembler": "^2.0.0",
+    "@adonisjs/assembler": "^3.0.7",
     "adonis-preset-ts": "^1.0.4",
     "eslint": "^7.12.0",
     "eslint-plugin-adonis": "^1.0.15",
@@ -19,12 +19,10 @@
     "youch-terminal": "^1.0.1"
   },
   "dependencies": {
-    "@adonisjs/ace": "^6.0.0",
-    "@adonisjs/auth": "^4.3.1",
-    "@adonisjs/core": "^5.0.0-preview-rc",
-    "@adonisjs/fold": "^6.0.0",
-    "@adonisjs/lucid": "^8.4.3",
-    "@adonisjs/session": "^3.1.2",
+    "@adonisjs/auth": "^5.0.2",
+    "@adonisjs/core": "^5.0.4-preview-rc-2",
+    "@adonisjs/lucid": "^9.0.3",
+    "@adonisjs/session": "^4.0.5",
     "luxon": "^1.25.0",
     "mysql": "^2.18.1",
     "oracledb": "^5.0.0",
