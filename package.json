@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@adonisjs/assembler": "^3.0.7",
-    "adonis-preset-ts": "^1.0.4",
+    "adonis-preset-ts": "^1.1.0",
     "eslint": "^7.12.1",
     "eslint-plugin-adonis": "^1.0.15",
     "pino-pretty": "^4.3.0",
