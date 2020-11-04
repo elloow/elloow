@@ -30,4 +30,9 @@ export default Env.rules({
   ORACLE_USER: Env.schema.string.optional(),
   ORACLE_PASSWORD: Env.schema.string.optional(),
   ORACLE_DB_NAME: Env.schema.string.optional(),
+
+  REDIS_CONNECTION: Env.schema.enum(['local']),
+  REDIS_HOST: Env.schema.string({ format: 'host' }),
+  REDIS_PORT: Env.schema.number(),
+  REDIS_PASSWORD: Env.schema.string.optional(),
 })
