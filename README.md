@@ -26,6 +26,8 @@ The Elloow Suite consists of:
 # Project status
 The project is under development. There is no production-ready version.
 
+Project progress : [**elloow roadmap**](https://github.com/orgs/elloow/projects/1)
+
 # Installation
 Follow steps on the [wiki page](https://github.com/elloow/elloow/wiki/Installation)
 
