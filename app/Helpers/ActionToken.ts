@@ -30,6 +30,11 @@ export default class ActionToken {
     return `${tokenEntity.action}_${tokenEntity.uid}`
   }
 
+  public async verify (): Promise<ActionTokenEntity> {
+    const entity = await ActionToken.verify(this.actionToken.action, this.actionToken.uid as string)
+    return entity
+  }
+
   public static async verify (action: string, token: string): Promise<ActionTokenEntity> {
     const actionToken: ActionTokenEntity = { action: action, uid: token }
     const redisTokenId = ActionToken.getRedisId(actionToken)
