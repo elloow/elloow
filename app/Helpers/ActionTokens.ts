@@ -26,16 +26,16 @@ export default class ActionToken {
     return `${tokenEntity.action}_${tokenEntity.id}`
   }
 
-  public static async verify (action: string, token: string) : Promise<ActionTokenEntity> {
-    // TODO Test if exist (if yes return entity | if not trown error)
-    let temp: ActionTokenEntity = {action: action, id: token}
-    return temp
-  }
+  // public static async verify (action: string, token: string) : Promise<ActionTokenEntity> {
+  //   // TODO Test if exist (if yes return entity | if not trown error)
+  //   let temp: ActionTokenEntity = {action: action, id: token}
+  //   return temp
+  // }
 
-  public static async delete (action: string, token: string): Promise<boolean> {
-    // TODO logic
-    return true
-  }
+  // public static async delete (action: string, token: string): Promise<boolean> {
+  //   // TODO logic
+  //   return true
+  // }
 }
 
 abstract class ActionTokenEntity {
