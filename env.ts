@@ -10,6 +10,7 @@ export default Env.rules({
     }
     return String(value)
   },
+  CACHE_VIEWS: Env.schema.boolean(),
 
   DB_CONNECTION: Env.schema.enum(['mysql', 'pg', 'oracle']),
 

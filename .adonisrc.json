@@ -24,11 +24,16 @@
     "@adonisjs/auth",
     "@adonisjs/session",
     "@adonisjs/redis",
-    "@adonisjs/mail"
+    "@adonisjs/mail",
+    "@adonisjs/view"
   ],
   "metaFiles": [
     ".env",
-    ".adonisrc.json"
+    ".adonisrc.json",
+    {
+      "pattern": "resources/views/**/*.edge",
+      "reloadServer": false
+    }
   ],
   "aceProviders": [
     "@adonisjs/repl"
