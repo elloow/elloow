@@ -15,7 +15,10 @@ export default class ActionToken {
     this.actionToken.data ??= { }
   }
 
-  public async store () {
+  /**
+   * @returns Return token Uid
+   */
+  public async store () : Promise<string> {
     this.actionToken.uid ??= `${DateTime.local().toMillis()}${crypto.randomBytes(42).toString('base64')}`
     const redisTokenId = ActionToken.getRedisId(this.actionToken)
     const pipeline = Redis.pipeline().hset(
@@ -26,6 +29,7 @@ export default class ActionToken {
       pipeline.expire(redisTokenId, this.actionToken.expiration)
     }
     await pipeline.exec()
+    return this.actionToken.uid
   }
 
   public static getRedisId (tokenEntity: ActionTokenEntity) : string {
@@ -37,8 +41,8 @@ export default class ActionToken {
     return entity
   }
 
-  public static async verify (action: string, token: string): Promise<ActionTokenEntity> {
-    const actionToken: ActionTokenEntity = { action: action, uid: token }
+  public static async verify (action: string, tokenUid: string): Promise<ActionTokenEntity> {
+    const actionToken: ActionTokenEntity = { action: action, uid: tokenUid }
     const redisTokenId = ActionToken.getRedisId(actionToken)
     const pipeline = await Redis.pipeline().exists(redisTokenId).hget(redisTokenId, 'data').exec()
     if (pipeline[0][1] === 0) {
