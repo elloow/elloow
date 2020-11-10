@@ -11,6 +11,8 @@ export default class ActionToken {
 
   constructor (actionToken: ActionTokenEntity) {
     this.actionToken = actionToken
+    this.actionToken.expiration ??= 3800
+    this.actionToken.data ??= { }
   }
 
   public async store () {
@@ -39,7 +41,6 @@ export default class ActionToken {
     const actionToken: ActionTokenEntity = { action: action, uid: token }
     const redisTokenId = ActionToken.getRedisId(actionToken)
     const pipeline = await Redis.pipeline().exists(redisTokenId).hget(redisTokenId, 'data').exec()
-    console.info(pipeline)
     if (pipeline[0][1] === 0) {
       throw new Error('VALIDATION_FAILED')
     }
@@ -52,9 +53,9 @@ export default class ActionToken {
   }
 }
 
-abstract class ActionTokenEntity {
-  public data?: { }
-  public action: string
-  public expiration?: number | undefined
-  public uid?: string
+interface ActionTokenEntity {
+  data?: { }
+  action: string
+  expiration?: number | undefined
+  uid?: string
 }
