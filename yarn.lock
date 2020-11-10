@@ -30,26 +30,26 @@
     "@poppinss/utils" "^2.5.7"
     semver "^7.3.2"
 
-"@adonisjs/assembler@^3.0.7":
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/@adonisjs/assembler/-/assembler-3.0.7.tgz#09feb4cf4033253022d37f175944bf7feeeb71ee"
-  integrity sha512-FxvRrA5Tg0LVwoxXVuD2epBRih0VnD+5CD0QPaZ7eLfxknzDJPPm/sXqsRQD0RG7yZafOAJGmFFGgzt9iihFoQ==
+"@adonisjs/assembler@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@adonisjs/assembler/-/assembler-3.1.0.tgz#99493a2b881378ca9837b0cac2e5b86bb309f160"
+  integrity sha512-+gwFOgEK2WydSFTht41w9MF6WBmfLqYsPY7JlhtxcG4N5jU/EyRGTk4p9x68vSAdfvIMoTP2LqXCqzA8t0xIfQ==
   dependencies:
     "@adonisjs/application" "^3.0.20"
     "@adonisjs/env" "^2.0.8"
     "@adonisjs/ioc-transformer" "^2.0.1"
-    "@adonisjs/require-ts" "^1.0.4"
+    "@adonisjs/require-ts" "^1.1.0"
     "@adonisjs/sink" "^4.2.1"
     "@poppinss/chokidar-ts" "^3.1.1"
     "@poppinss/cliui" "^2.0.2"
     "@poppinss/utils" "^2.5.7"
     cpy "^8.1.1"
     emittery "^0.7.2"
-    execa "^4.0.3"
+    execa "^4.1.0"
     fs-extra "^9.0.1"
     get-port "^5.1.1"
     has-yarn "^2.1.0"
-    import-fresh "^3.2.1"
+    import-fresh "^3.2.2"
     picomatch "^2.2.2"
     slash "^3.0.0"
 
@@ -245,10 +245,10 @@
     parse-imports "0.0.4"
     string-width "^4.2.0"
 
-"@adonisjs/require-ts@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@adonisjs/require-ts/-/require-ts-1.0.4.tgz#9741223d66bdc52b749e2f3d0efd483c36d14f78"
-  integrity sha512-xmdWcWVVRmypgnLqw5zvJwwAbO07DbsuVSrclw/AHU0Zn7TgdCgN65JttrIpZq697hhC5pJfWZSbuT3ajXV0Xw==
+"@adonisjs/require-ts@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@adonisjs/require-ts/-/require-ts-1.1.0.tgz#a025fdbdffdd6281d2c9664c91cc02efff8a5261"
+  integrity sha512-GIOQR9/7UEcYMEnfHThpsOcyfbJqPIHEAgYjW4wQhi60lSuB3uGFbmquk6F8aLw4fj+1QKOSlVLirdduQjQ4Dg==
   dependencies:
     "@poppinss/utils" "^2.5.7"
     debug "^4.2.0"
@@ -1697,10 +1697,10 @@ etag@^1.8.1, etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-execa@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/execa/-/execa-4.0.3.tgz#0a34dabbad6d66100bd6f2c576c8669403f317f2"
-  integrity sha512-WFDXGHckXPWZX19t1kCsXzOpqX9LWYNqn4C+HqZlk/V0imTkzJZqf87ZBhvpHaftERYknpk0fjSylnXVlVgI0A==
+execa@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-4.1.0.tgz#4e5491ad1572f2f17a77d388c6c857135b22847a"
+  integrity sha512-j5W0//W7f8UxAn8hXVnwG8tLwdiUy4FJLcSupCg6maBYZDpyBvTApK7KyuI4bKj8KOh1r2YH+6ucuYtJv1bTZA==
   dependencies:
     cross-spawn "^7.0.0"
     get-stream "^5.0.0"
@@ -2278,10 +2278,10 @@ ignore@^4.0.3, ignore@^4.0.6:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
 
-import-fresh@^3.0.0, import-fresh@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.2.1.tgz#633ff618506e793af5ac91bf48b72677e15cbe66"
-  integrity sha512-6e1q1cnWP2RXD9/keSkxHScg508CdXqXWgWBaETNhyuBFz+kUZlKboh+ISK+bU++DmbHimVBrOz/zzPe0sZ3sQ==
+import-fresh@^3.0.0, import-fresh@^3.2.1, import-fresh@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.2.2.tgz#fc129c160c5d68235507f4331a6baad186bdbc3e"
+  integrity sha512-cTPNrlvJT6twpYy+YmKUKrTSjWFs3bjYjAhCwm+z4EOCubZxAuO+hHpRN64TqjEaYSHs7tJAE0w1CKMGmsG/lw==
   dependencies:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
