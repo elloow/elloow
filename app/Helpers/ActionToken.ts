@@ -1,6 +1,6 @@
 import Redis from '@ioc:Adonis/Addons/Redis'
-import Hash from '@ioc:Adonis/Core/Hash'
 import * as crypto from 'crypto'
+import { DateTime } from 'luxon'
 
 export default class ActionToken {
   private actionToken: ActionTokenEntity
@@ -14,7 +14,7 @@ export default class ActionToken {
   }
 
   public async store () {
-    this.actionToken.uid ??= await Hash.make(crypto.randomBytes(6).toString('base64'))
+    this.actionToken.uid ??= `${DateTime.local().toMillis()}${crypto.randomBytes(42).toString('base64')}`
     const redisTokenId = ActionToken.getRedisId(this.actionToken)
     const pipeline = Redis.pipeline().hset(
       redisTokenId,
