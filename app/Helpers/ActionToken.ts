@@ -1,5 +1,5 @@
 import Redis from '@ioc:Adonis/Addons/Redis'
-import * as crypto from 'crypto'
+import cryptoRandomString from 'crypto-random-string'
 import { DateTime } from 'luxon'
 
 export default class ActionToken {
@@ -19,7 +19,7 @@ export default class ActionToken {
    * @returns Return token Uid
    */
   public async store () : Promise<string> {
-    this.actionToken.uid ??= `${DateTime.local().toMillis()}${crypto.randomBytes(42).toString('base64')}`
+    this.actionToken.uid ??= `${DateTime.local().toMillis()}${cryptoRandomString({length: 42, type: 'alphanumeric'})}`
     const redisTokenId = ActionToken.getRedisId(this.actionToken)
     const pipeline = Redis.pipeline().hset(
       redisTokenId,
@@ -30,6 +30,12 @@ export default class ActionToken {
     }
     await pipeline.exec()
     return this.actionToken.uid
+  }
+
+  public static async getData (action: string, tokenUid: string): Promise<{}> {
+    const redisTokenId = ActionToken.getRedisId({ action: action, uid: tokenUid })
+    const data = await Redis.hget(redisTokenId, 'data') ?? ''
+    return JSON.parse(data)
   }
 
   public static getRedisId (tokenEntity: ActionTokenEntity) : string {

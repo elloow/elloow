@@ -41,4 +41,5 @@ Server.middleware.register([
 |
 */
 Server.middleware.registerNamed({
+  v1_ActionTokenShield: 'App/Middleware/v1/ActionTokenShield',
 })

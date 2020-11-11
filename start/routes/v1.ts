@@ -7,6 +7,8 @@ Route.group(() => {
 
   Route.post('/send-organisation-register-link', 'v1/MailersController.organisationRegisterLink')
 
+  Route.post('/check-action-token/:action/:action_token?', 'v1/ActionTokensController.check')
+
   Route.group(() => {
     Route.post('/user', 'v1/AuthUsersController.login')
     Route.post('/user/logout', 'v1/AuthUsersController.logout')
