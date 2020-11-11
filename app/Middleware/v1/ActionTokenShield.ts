@@ -7,7 +7,6 @@ export default class ActionTokenShield {
     const token = params.action_token ?? request.only(['action_token']).action_token
 
     const action = middlewareParams[0]
-    console.info(action, token)
     try {
       if (!token) {
         throw ''
