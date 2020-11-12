@@ -19,7 +19,7 @@ export default class MailersController {
     }
 
     const data = request.only(['email'])
-    const actionToken = new ActionToken({ action: 'organisation-register', expiration: 3600, data: { email: data.email } })
+    const actionToken = new ActionToken({ action: 'organisation-register', expiration: 1800, data: { email: data.email } })
     const frontUrl = `${Env.get('FRONT_HOST')}/actions/create_organisation?action_token=${(await actionToken.store())}`
     await new RegisterOrganisation(frontUrl, data.email).send()
     return response.send(Answer.success({email: data.email}))
