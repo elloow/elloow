@@ -38,6 +38,11 @@ export default class ActionToken {
     return JSON.parse(data)
   }
 
+  public static async setData (action: string, tokenUid: string, data: {}) {
+    const redisTokenId = ActionToken.getRedisId({ action: action, uid: tokenUid })
+    await Redis.hset(redisTokenId, 'data', JSON.stringify(data))
+  }
+
   public static getRedisId (tokenEntity: ActionTokenEntity) : string {
     return `${tokenEntity.action}_${tokenEntity.uid}`
   }
