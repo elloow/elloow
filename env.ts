@@ -11,6 +11,7 @@ export default Env.rules({
     return String(value)
   },
   CACHE_VIEWS: Env.schema.boolean(),
+  FRONT_HOST: Env.schema.string({ format: 'url' }),
 
   DB_CONNECTION: Env.schema.enum(['mysql', 'pg', 'oracle']),
 

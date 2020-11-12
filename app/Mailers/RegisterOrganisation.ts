@@ -6,7 +6,7 @@ export default class RegisterOrganisation {
   private template = 'emails/register_organisation'
 
   private templateData = {
-    actionToken: this.actionToken,
+    url: this.url,
   }
 
   private configure (message: MessageContract) {
@@ -17,9 +17,9 @@ export default class RegisterOrganisation {
       .htmlView(this.template, this.templateData)
   }
 
-  constructor (private actionToken: string, private recipient: string) {}
+  constructor (private url: string, private recipient: string) {}
 
   public async send () {
-    return Mail.send((message) => this.configure(message))
+    return Mail.sendLater((message) => this.configure(message))
   }
 }

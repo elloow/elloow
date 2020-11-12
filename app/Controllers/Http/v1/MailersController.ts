@@ -3,6 +3,7 @@ import RegisterOrganisation from 'App/Mailers/RegisterOrganisation'
 import ActionToken from 'App/Helpers/ActionToken'
 import Answer from 'App/Helpers/Answer'
 import { rules, schema } from '@ioc:Adonis/Core/Validator'
+import Env from '@ioc:Adonis/Core/Env'
 
 export default class MailersController {
   public async organisationRegisterLink ({ request, response }: HttpContextContract) {
@@ -18,8 +19,9 @@ export default class MailersController {
     }
 
     const data = request.only(['email'])
-    const actionToken = new ActionToken({ action: 'organisation-register', expiration: 3600, data: { email: data.email }})
-    await new RegisterOrganisation((await actionToken.store()), data.email).send()
+    const actionToken = new ActionToken({ action: 'organisation-register', expiration: 3600, data: { email: data.email } })
+    const frontUrl = `${Env.get('FRONT_HOST')}/actions/create_organisation?action_token=${(await actionToken.store())}`
+    await new RegisterOrganisation(frontUrl, data.email).send()
     return response.send(Answer.success({email: data.email}))
   }
 }
