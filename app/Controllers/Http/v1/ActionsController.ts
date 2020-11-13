@@ -10,7 +10,6 @@ export default class ActionsController {
   public async createUserAndOrganisation ({request, response} : HttpContextContract) {
     const data = request.only(['user_email', 'user_password', 'org_name'])
     const token = request.only(['action_token'])
-    console.info(data)
     const validationSchema = schema.create(
       {
         'user_email': schema.string({}, [rules.unique({table: User.table, column: 'email'})]),
