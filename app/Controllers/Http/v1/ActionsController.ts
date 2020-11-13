@@ -9,7 +9,7 @@ import UserRole from 'App/Models/UserRole'
 export default class ActionsController {
   public async createUserAndOrganisation ({request, response} : HttpContextContract) {
     const data = request.only(['user_email', 'user_password', 'org_name'])
-    const token = request.only(['action_token'])
+    const token = request.only(['action_token']).action_token as string
     const validationSchema = schema.create(
       {
         'user_email': schema.string({}, [rules.unique({table: User.table, column: 'email'})]),
@@ -24,7 +24,7 @@ export default class ActionsController {
     const user = await User.create({ email: data.user_email, password: data.user_password, userRoleId: (await UserRole.query().where('name', 'basic').firstOrFail()).id })
     const org = await Organisation.create({ name: data.org_name })
     await org.related('userOwner').associate(user)
-    await new ActionToken({action: 'organisation-register', uid: token.action_token}).delete()
+    await new ActionToken({action: 'organisation-register', uid: token}).delete()
     return response.send(Answer.success({organisation: org, user: user}))
   }
 }
