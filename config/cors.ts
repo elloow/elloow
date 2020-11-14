@@ -44,7 +44,17 @@ const corsConfig: CorsConfig = {
   |                     one of the above values.
   |
   */
-  origin: true,
+  origin: (origin) => {
+    if (process.env.NODE_ENV === 'development') {
+      return true
+    }
+
+    if (origin.includes(process.env.ROOT_HOST || '')) {
+      return true
+    }
+
+    return false
+  },
 
   /*
   |--------------------------------------------------------------------------
