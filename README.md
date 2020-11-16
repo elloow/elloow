@@ -10,7 +10,9 @@ Server side project built with [AdonisJS](https://github.com/adonisjs)
 
 <br>
 
-![CI](https://github.com/elloow/elloow/workflows/CI/badge.svg?event=push) ![CodeQL](https://github.com/elloow/elloow/workflows/CodeQL/badge.svg) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![CI](https://github.com/elloow/elloow/workflows/CI/badge.svg?event=push) 
+![CodeQL](https://github.com/elloow/elloow/workflows/CodeQL/badge.svg) 
+![GitHub](https://img.shields.io/github/license/elloow/elloow)
 
 </div>
 
