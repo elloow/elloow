@@ -226,14 +226,14 @@
     cuid "^2.1.8"
     jest-worker "^26.6.2"
 
-"@adonisjs/redis@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@adonisjs/redis/-/redis-5.0.8.tgz#26464700d82363c1d3f126a2b5b15baf0960fd6b"
-  integrity sha512-XK9qRFHC88PBDQsKqVjH4fJiaV0WaN/S/N/vprbMF1UVy+rPPl+F+szKt69Ocad2i4SdBlc7fxq986dzX9yieg==
+"@adonisjs/redis@^5.0.9":
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/@adonisjs/redis/-/redis-5.0.9.tgz#38865f32971d6f5c34d7cc1a61337f4343931448"
+  integrity sha512-ADQT/fPve/3CdjfazrNgeN6hhFdUh2xsZ6jzAHRh+7kMglQ6NInVui+pwkCKUjg9gJ0bDmY1voBUmqM+3gxTbA==
   dependencies:
-    "@poppinss/utils" "^2.5.7"
-    "@types/ioredis" "^4.17.6"
-    ioredis "^4.19.0"
+    "@poppinss/utils" "^2.5.9"
+    "@types/ioredis" "^4.17.8"
+    ioredis "^4.19.2"
 
 "@adonisjs/repl@^1.1.5":
   version "1.1.5"
@@ -522,10 +522,10 @@
   resolved "https://registry.yarnpkg.com/@types/http-cache-semantics/-/http-cache-semantics-4.0.0.tgz#9140779736aa2655635ee756e2467d787cfe8a2a"
   integrity sha512-c3Xy026kOF7QOTn00hbIllV1dLR9hG9NkSrLQgCVs8NF6sBU+VGWjD3wLPhmh1TYAc7ugCFsvHYMN4VcBN1U1A==
 
-"@types/ioredis@^4.17.6":
-  version "4.17.7"
-  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.17.7.tgz#5007a56380fd387315efabc6c777c050feabb121"
-  integrity sha512-M8/KDSGmNYhPFMn+CxDDpIEHP27b2muEHgnK1UgIQIMEO2KXH9mznHx3epeRlD+AjF94HFh3dy2/9zqO+pPDqQ==
+"@types/ioredis@^4.17.8":
+  version "4.17.8"
+  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.17.8.tgz#a761c9adac03a9f0413157691fdae247262eb523"
+  integrity sha512-13WwLG9jMvzjabpBydDXKSPdvAnKI8pZOKk9rEFp3QizyJS8riyNyVRV5ATvU1DCKsz31KM9g90etnTGgMFh3g==
   dependencies:
     "@types/node" "*"
 
@@ -2418,7 +2418,7 @@ interpret@^2.2.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-2.2.0.tgz#1a78a0b5965c40a5416d007ad6f50ad27c417df9"
   integrity sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==
 
-ioredis@^4.19.0:
+ioredis@^4.19.2:
   version "4.19.2"
   resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.19.2.tgz#e3eab394c653cea5aea07c0c784d8c772dce8801"
   integrity sha512-SZSIwMrbd96b7rJvJwyTWSP6XQ0m1kAIIqBnwglJKrIJ6na7TeY4F2EV2vDY0xm/fLrUY8cEg81dR7kVFt2sKA==
