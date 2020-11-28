@@ -26,7 +26,7 @@
     "@adonisjs/redis": "^5.0.9",
     "@adonisjs/repl": "^1.1.5",
     "@adonisjs/session": "^4.0.5",
-    "@adonisjs/view": "^3.0.8",
+    "@adonisjs/view": "^3.0.9",
     "crypto-random-string": "^3.3.0",
     "luxon": "^1.25.0",
     "mysql": "^2.18.1",

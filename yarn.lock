@@ -298,12 +298,12 @@
     tmp-cache "^1.1.0"
     validator "^13.1.17"
 
-"@adonisjs/view@^3.0.8":
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-3.0.8.tgz#6fc9ac2c0ed8aa1774af992af29cc9e19fb9c9e5"
-  integrity sha512-tv7pTbdu2I8S3Y4cacARprLnuhjWUbYyv/EUzDeijzgJCIEuGpdZZW6ROoRfVwsa7S10bbUSlKfcdSdJI45h7g==
+"@adonisjs/view@^3.0.9":
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-3.0.9.tgz#21b468c32f1b51a38447e388244eb1faf21f4808"
+  integrity sha512-Hnwi7XC6XZFpfiyxIimDAEIZm9F9ME874YgYI7pZq6XsHYCI9uE0etkej1l7QeMjGCLg8Gw6NgGlM7Fxt0TdEQ==
   dependencies:
-    edge.js "^3.2.0"
+    edge.js "^3.4.0"
 
 "@arr/every@^1.0.0":
   version "1.0.1"
@@ -1559,38 +1559,40 @@ edge-error@^1.0.5:
   resolved "https://registry.yarnpkg.com/edge-error/-/edge-error-1.0.5.tgz#5152a1a7f0b57fe35402c9db493f12f5ffd5ba2f"
   integrity sha512-PnH9+S4e5eSyUFjGx71GAN41sI4eoXbj4pEOfUNFpMDaPlLWdfjQbGP46is2C/1ZLdRQFpN8lMIpAEY49aU3gg==
 
-edge-lexer@^3.1.5, edge-lexer@^3.1.6:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/edge-lexer/-/edge-lexer-3.1.6.tgz#162e9982c1249ff1c2a9d5d2fad38f1fa143c41f"
-  integrity sha512-f/HSLTNRTc3nWbw6xLOFn4JFyUHonMHa56pZVBDD/FNYdcxTf4qUeISlpbVUL1Qn0FY/AttT2ch6Q4AzdR+E8w==
+edge-lexer@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/edge-lexer/-/edge-lexer-3.2.0.tgz#5f0dd43cce5a60cd56ee8d3e6621e22adb1692fa"
+  integrity sha512-KCXSzj4mH4vebHyDwesQ5OxIjdNP1iRa8o2lH7NrMPPQnzdDs7CldrJGwH5uEuE0zSasnHGg4+M4zgF8tOw5kQ==
   dependencies:
     edge-error "^1.0.5"
 
-edge-parser@^5.1.6:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/edge-parser/-/edge-parser-5.2.0.tgz#8d497cff9eaa80a4055f81df715ab3d739b7dbf6"
-  integrity sha512-oKhqc+06YvjqzfngE2clwR3IppCPVdx1hA10164U+bqKVuZlq2c7BONTHffDFDCjxS3CcrOPMoA7duq0kDX04w==
+edge-parser@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/edge-parser/-/edge-parser-5.4.0.tgz#cb68d0502349d607700b932713f1faf5ff15d6bd"
+  integrity sha512-ZOuygGoK2B2xwz3JzdLsUUQoIM5494IK9CmMOi1y9ZZFgijEdP3g+J4IiwGF/rUK0hnx83t/UNQgHmahalPIyw==
   dependencies:
     acorn "^8.0.4"
     astring "^1.4.3"
     edge-error "^1.0.5"
-    edge-lexer "^3.1.5"
+    edge-lexer "^3.2.0"
     js-stringify "^1.0.2"
 
-edge.js@^3.2.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/edge.js/-/edge.js-3.2.1.tgz#af37bf8ab0567fe62d7116e14a6e3467def09012"
-  integrity sha512-BQ8tlLXahlOi9M69t7ZSv0OX3prq/Zt/pL4nc5IWxFpdhT20rDFPAprQU/5Z3gWBIuSEtwYO5vDMQeZh6cURXw==
+edge.js@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/edge.js/-/edge.js-3.4.0.tgz#0fff1a2a7702261ba84bc0b5f08c16c67454ff87"
+  integrity sha512-zDTBpp7W/wdXV/RH74Vp+OYfSEv3XjZWzBGSN6PPPrtjQ1gCr1N1/C8o0pZUMrXrmds51QBO5d/MDUQfKJx2yg==
   dependencies:
     "@poppinss/inspect" "^1.0.1"
+    "@poppinss/utils" "^2.5.7"
     edge-error "^1.0.5"
-    edge-lexer "^3.1.6"
-    edge-parser "^5.1.6"
+    edge-lexer "^3.2.0"
+    edge-parser "^5.4.0"
     he "^1.2.0"
     lodash.foreach "^4.5.0"
     lodash.merge "^4.6.2"
     lodash.size "^4.2.0"
     macroable "^5.0.3"
+    stringify-attributes "^2.0.0"
     truncatise "0.0.8"
 
 editorconfig@^0.15.3:
@@ -1646,6 +1648,11 @@ es-module-lexer@0.3.20:
   version "0.3.20"
   resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.3.20.tgz#13661aa6d793da74684b3353ad4327d5fa59d3d3"
   integrity sha512-kfB4R9F6FJ5Bgvxyk6W/u/a9cncXEGRyaD2UxyBhrF3+ty4qLzptgStLfe0J90o/qkSiiY0+yyzMcIIPvAOjIw==
+
+escape-goat@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-2.1.1.tgz#1b2dc77003676c457ec760b2dc68edb648188675"
+  integrity sha512-8/uIhbG12Csjy2JEW7D9pHbreaVaS/OpN3ycnyvElTdwM5n6GY6W6e2IPemfvGZeUMqZ9A/3GqIZMgKnBhAw/Q==
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -4418,6 +4425,13 @@ string_decoder@~1.1.1:
   integrity sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
   dependencies:
     safe-buffer "~5.1.0"
+
+stringify-attributes@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/stringify-attributes/-/stringify-attributes-2.0.0.tgz#0355827de224ec8a94ca81a267f92a3f5f778820"
+  integrity sha512-wrVfRV6sCCB6wr3gx8OgKsp/9dSWWbKr8ifLfOxEcd/BBoa8d5pAf4BZb/jQW1JZnoZImjvUdxdo3ikYHZmYiw==
+  dependencies:
+    escape-goat "^2.0.0"
 
 strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   version "3.0.1"
