@@ -203,10 +203,10 @@
     pretty-hrtime "^1.0.3"
     qs "^6.9.4"
 
-"@adonisjs/mail@^5.1.0":
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/@adonisjs/mail/-/mail-5.2.2.tgz#61f5e208f926b086309545584e26bad9c1907e27"
-  integrity sha512-aQUx/2Q2i1jz/6YgkJjrv3ExgVt8gXtW/WvQYRHRqimtrH/5D63XBIkz0ESb7QuuDpFROC+U90gIgi7oQ4JbWQ==
+"@adonisjs/mail@^5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@adonisjs/mail/-/mail-5.2.3.tgz#7b3d109f2e74fdc5f84b7b630e078fa5b42f98ab"
+  integrity sha512-ZxhHzmHqhT8iMIMh+VTsMURy/b7IqU2csEiYCrqA7bq/al2Y/l7WorIJY6jkFVhSe+H1tU3KzBwM2hWWhZtx4A==
   dependencies:
     "@poppinss/colors" "^2.0.3"
     "@poppinss/manager" "^3.0.8"
