@@ -13,7 +13,7 @@ export default class ActionsController {
     const validationSchema = schema.create(
       {
         'user_email': schema.string({}, [rules.unique({table: User.table, column: 'email'})]),
-        'user_password': schema.string({}, [rules.regex(/^(?=.*[A-Z].*[A-Z])(?=.*[\\\+\-\*\/\+\?\!\]\[\{\}\=\(\)\&\%\¦\°\§].*[\\\+\-\*\/\+\?\!\]\[\{\}\=\(\)\&\%\¦\°\§])(?=.*[0-9].*[0-9]).{8,}$/)]),
+        'user_password': schema.string({}, [rules.regex(/^(?=.*[A-Z].*[A-Z])(?=.*[\\\+\-\*\/\+\?\!\]\[\{\}\=\(\)\&\%\¦\°\§\$].*[\\\+\-\*\/\+\?\!\]\[\{\}\=\(\)\&\%\¦\°\§])(?=.*[0-9].*[0-9]).{8,}$/)]),
         'org_name': schema.string({}, [rules.unique({table: 'organisations', column: 'name'})]),
       })
     try {
