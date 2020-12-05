@@ -3,13 +3,13 @@ import { BaseModel, belongsTo, BelongsTo, column, ManyToMany, manyToMany } from 
 import User from './User'
 
 export default class Organisation extends BaseModel {
-  @column({ isPrimary: true })
+  @column({ isPrimary: true, serializeAs: null })
   public id: number
 
   @column()
   public name: string
 
-  @column()
+  @column({serializeAs: null})
   public userId: number
 
   @manyToMany(() => User, { pivotTable: 'affiliations' })

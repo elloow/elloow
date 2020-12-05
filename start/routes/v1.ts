@@ -7,6 +7,10 @@ Route.group(() => {
 
   Route.post('/send-organisation-register-link', 'v1/MailersController.organisationRegisterLink')
 
+  Route.group(() => {
+    Route.get('/', 'v1/OrganisationsController.show')
+  }).prefix('/organisations/:name')
+
   Route.post('/check-action-token/:action/:action_token?', 'v1/ActionTokensController.check')
   Route.group(() => {
     Route.post('/create-user-organisation', 'v1/ActionsController.createUserAndOrganisation').middleware(['v1_ActionTokenShield:organisation-register'])
