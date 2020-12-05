@@ -1,5 +1,4 @@
-import { CookieOptions } from '@ioc:Adonis/Core/Response'
-import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+import { CookieOptions, ResponseContract } from '@ioc:Adonis/Core/Response'
 import Env from '@ioc:Adonis/Core/Env'
 
 export default class AuthenticationCookieStatus {
@@ -18,11 +17,11 @@ export default class AuthenticationCookieStatus {
     return 'api-elloow-auth'
   }
 
-  public static set (ctx: HttpContextContract, data: {} = {}) {
-    ctx.response.plainCookie(this.cookiesName, {auth:true, data: data}, this.cookiesConfig)
+  public static set (response: ResponseContract, data: {} = {}) {
+    response.plainCookie(this.cookiesName, {auth:true, data: data}, this.cookiesConfig)
   }
 
-  public static remove (ctx: HttpContextContract) {
-    ctx.response.plainCookie(this.cookiesName, {auth: false, data: null}, this.cookiesConfig)
+  public static remove (response: ResponseContract) {
+    response.plainCookie(this.cookiesName, {auth: false, data: null}, this.cookiesConfig)
   }
 }

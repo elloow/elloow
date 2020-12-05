@@ -23,7 +23,8 @@ export default class ActionsController {
     }
     const user = await User.create({ email: data.user_email, password: data.user_password, userRoleId: (await UserRole.query().where('name', 'basic').firstOrFail()).id })
     const org = await Organisation.create({ name: data.org_name })
-    await org.related('userOwner').associate(user)
+    await org.related('userOwner').associate(user) // Set organisation owner
+    await user.related('organisations').save(org) // Add organisation affiliation
     await new ActionToken({action: 'organisation-register', uid: token}).delete()
     return response.send(Answer.success({organisation: org, user: user}))
   }

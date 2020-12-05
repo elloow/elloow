@@ -32,8 +32,8 @@ export default class User extends BaseModel {
   @manyToMany(() => Organisation, { pivotTable: 'affiliations' })
   public organisations: ManyToMany<typeof Organisation>
 
-  @hasMany(() => Affiliation)
-  public affiliations: HasMany<typeof Affiliation>
+  // @hasMany(() => Affiliation)
+  // public affiliations: HasMany<typeof Affiliation>
 
   @column()
   public rememberMeToken?: string
