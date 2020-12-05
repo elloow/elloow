@@ -14,7 +14,7 @@ export default class AuthenticationCookieStatus {
   }
 
   public static get cookiesName (): string {
-    return 'api-elloow-auth'
+    return 'api-elloow-auth-status'
   }
 
   public static set (response: ResponseContract, data: {} = {}) {

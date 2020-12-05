@@ -34,13 +34,13 @@ export default class User extends BaseModel {
   // @hasMany(() => Affiliation)
   // public affiliations: HasMany<typeof Affiliation>
 
-  @column()
+  @column({ serializeAs: null })
   public rememberMeToken?: string
 
-  @column.dateTime({ autoCreate: true })
+  @column.dateTime({ autoCreate: true, serializeAs: null })
   public createdAt: DateTime
 
-  @column.dateTime({ autoCreate: true, autoUpdate: true })
+  @column.dateTime({ autoCreate: true, autoUpdate: true, serializeAs: null })
   public updatedAt: DateTime
 
   @beforeSave()

@@ -1,5 +1,6 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Answer from 'App/Helpers/Answer'
+import AuthenticationCookieStatus from 'App/Helpers/AuthenticationCookieStatus'
 import User from 'App/Models/User'
 
 export default class AuthUsersController {
@@ -18,6 +19,8 @@ export default class AuthUsersController {
     await user.preload('role')
     await user.preload('organisations')
 
+    AuthenticationCookieStatus.set(response, user.toJSON())
+
     return response.send(Answer.success({ user: user }))
   }
 
@@ -25,6 +28,8 @@ export default class AuthUsersController {
     const userAuth = auth.use('v1_user')
 
     await userAuth.logout()
+
+    AuthenticationCookieStatus.remove(response)
 
     return response.send(Answer.success({}))
   }
