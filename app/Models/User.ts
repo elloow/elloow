@@ -7,11 +7,10 @@ import {
   belongsTo,
   manyToMany,
   ManyToMany,
-  BelongsTo, hasMany, HasMany,
+  BelongsTo,
 } from '@ioc:Adonis/Lucid/Orm'
 import UserRole from './UserRole'
 import Organisation from './Organisation'
-import Affiliation from './Affiliation'
 
 export default class User extends BaseModel {
   @column({ isPrimary: true })
