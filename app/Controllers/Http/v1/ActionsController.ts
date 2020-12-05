@@ -9,6 +9,7 @@ import UserRole from 'App/Models/UserRole'
 export default class ActionsController {
   public async createUserAndOrganisation ({request, response} : HttpContextContract) {
     const data = request.only(['user_email', 'user_password', 'org_name'])
+    data.org_name = data.org_name.replace(' ', '-')
     const token = request.only(['action_token']).action_token as string
     const validationSchema = schema.create(
       {
