@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "dev": "node ace serve --watch",
     "build": "node ace build",
-    "start": "node ace serve --watch",
+    "start": "node ace serve",
     "lint": "eslint . --ext=.ts",
     "ts-build": "tsc"
   },
