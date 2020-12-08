@@ -298,12 +298,13 @@
     tmp-cache "^1.1.0"
     validator "^13.1.17"
 
-"@adonisjs/view@^3.0.10":
-  version "3.0.10"
-  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-3.0.10.tgz#d67c1579eafd5994d8af1a874c4d7a3e8d72cbee"
-  integrity sha512-GQ+Ivq+aqCLfir+jVg8ideITO5JYXU1/IDMNBKULxWAtFuzZRR4PCvTegDSgPEELEB+ZjLLe2wfMHPi9v8Dd6Q==
+"@adonisjs/view@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-3.1.0.tgz#b4eba7b118c1776f5db2b1fb49bbac453a4e51fb"
+  integrity sha512-xL1pOFvvmt7GuE8UJfGiR6AsQiLLKWryFAV82NAUXLSu2bBVt9dDscPFqDSRgcC+fkIzOU0nHC7+QzeVWjYVOA==
   dependencies:
-    edge.js "^3.5.0"
+    edge-supercharged "^1.1.0"
+    edge.js "^3.5.1"
 
 "@arr/every@^1.0.0":
   version "1.0.1"
@@ -1096,6 +1097,11 @@ camelcase@5.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.0.0.tgz#03295527d58bd3cd4aa75363f35b2e8d97be2f42"
   integrity sha512-faqwZqnWxbxn+F1d399ygeamQNy3lPp/H9H6rNrqYh4FSVCtcY+3cub1MxA8o9mDd55mM8Aghuu/kuyYA6VTsA==
 
+camelcase@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
+  integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
+
 cardinal@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/cardinal/-/cardinal-2.1.1.tgz#7cc1055d822d212954d07b085dea251cc7bc5505"
@@ -1552,10 +1558,19 @@ edge-parser@^6.0.1:
     edge-lexer "^3.2.1"
     js-stringify "^1.0.2"
 
-edge.js@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/edge.js/-/edge.js-3.5.0.tgz#0ed6103aadbad57ca717f60063729b03142962f8"
-  integrity sha512-ZK06Rrsso+u3FYClwBOhBLp7OTSajuchSoHToC5ij5ni5cOs9vfd/71nu1o6t1nCswDV6Dkm8Gp0yFe4Uxgrfg==
+edge-supercharged@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/edge-supercharged/-/edge-supercharged-1.1.0.tgz#265c0a3a872037721fa7f30e653b9b9b07c21ca5"
+  integrity sha512-j9KjgvOvwXakfqrsB7fADQZ7f3Ihq7qYNj4HdJCPfQe7MEJEds3pwK7mpSYwKXQgenMLfOTpx7i/LwQ1XuPxoA==
+  dependencies:
+    "@poppinss/utils" "^2.5.9"
+    camelcase "^6.2.0"
+    slash "^3.0.0"
+
+edge.js@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/edge.js/-/edge.js-3.5.1.tgz#d040fab9690ec0ff3ee6ee64c8df6fffd44c62a5"
+  integrity sha512-HbPi5r5GJyhm6r4/nwgI6sO/myX8Ii/EjwYOkhRZ4fQ6fDnwgUT75IY0xzz1ME7Ou5BGMZpNSA8eftN+GEp4eQ==
   dependencies:
     "@poppinss/inspect" "^1.0.1"
     "@poppinss/utils" "^2.5.9"
