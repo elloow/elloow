@@ -30,7 +30,7 @@
     "crypto-random-string": "^3.3.0",
     "luxon": "^1.25.0",
     "mysql": "^2.18.1",
-    "oracledb": "^5.0.0",
+    "oracledb": "^5.1.0",
     "pg": "^8.5.1",
     "phc-argon2": "^1.0.11",
     "pino-pretty": "^4.3.0",
