@@ -4,6 +4,16 @@ import AuthenticationCookieStatus from 'App/Helpers/AuthenticationCookieStatus'
 import User from 'App/Models/User'
 
 export default class AuthUsersController {
+  public async show ({ auth, response }: HttpContextContract) {
+    const userAuth = auth.use('v1_user')
+    const user = userAuth.user as User
+
+    await user.preload('role')
+    await user.preload('organisations')
+
+    return response.send(Answer.success({ user: user }))
+  }
+
   public async login ({ auth, request, response }: HttpContextContract) {
     const userAuth = auth.use('v1_user')
     const userData = request.only(['email', 'password'])
