@@ -17,6 +17,7 @@ Route.group(() => {
   }).prefix('/actions')
 
   Route.group(() => {
+    Route.get('/user', 'v1/AuthUsersController.show').middleware(['v1_UserAuth'])
     Route.post('/user', 'v1/AuthUsersController.login')
     Route.post('/user/logout', 'v1/AuthUsersController.logout')
   }).prefix('/auth')
