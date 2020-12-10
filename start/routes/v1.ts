@@ -8,8 +8,8 @@ Route.group(() => {
   Route.post('/send-organisation-register-link', 'v1/MailersController.organisationRegisterLink')
 
   Route.group(() => {
-    Route.get('/', 'v1/OrganisationsController.show')
-  }).prefix('/organisations/:name')
+    Route.get('/:name', 'v1/OrganisationsController.show')
+  }).prefix('/organisations')
 
   Route.post('/check-action-token/:action/:action_token?', 'v1/ActionTokensController.check')
   Route.group(() => {

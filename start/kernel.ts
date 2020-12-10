@@ -43,4 +43,5 @@ Server.middleware.register([
 Server.middleware.registerNamed({
   v1_ActionTokenShield: 'App/Middleware/v1/ActionTokenShield',
   v1_UserAuth: 'App/Middleware/v1/UserAuth',
+  v1_UserRoleAuth: 'App/Middleware/v1/UserRoleAuth',
 })

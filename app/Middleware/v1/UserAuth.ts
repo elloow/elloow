@@ -22,7 +22,7 @@ export default class UserAuth {
         .send(
           Answer.fail(
             'Only register user can access resource',
-            'UNAUTHORIZED_REQUEST'
+            ExceptionCode.Unauthorized
           )
         )
     }

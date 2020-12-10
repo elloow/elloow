@@ -13,7 +13,7 @@ export default class ActionTokenShield {
       }
       await ActionToken.verify(action, token)
     } catch (error) {
-      return response.status(401).send(Answer.fail('Bad action token provided', 'BAD_ACTION_TOKEN', null))
+      return response.status(401).send(Answer.fail('Bad action token provided', ExceptionCode.BadActionToken, null))
     }
 
     await next()
