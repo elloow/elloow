@@ -19,13 +19,13 @@
     "youch-terminal": "^1.0.1"
   },
   "dependencies": {
-    "@adonisjs/auth": "^5.0.2",
+    "@adonisjs/auth": "^5.1.1",
     "@adonisjs/core": "^5.0.4-preview-rc-2.1",
-    "@adonisjs/lucid": "^9.0.3",
+    "@adonisjs/lucid": "^10.0.0",
     "@adonisjs/mail": "^5.2.3",
     "@adonisjs/redis": "^5.0.9",
     "@adonisjs/repl": "^1.1.6",
-    "@adonisjs/session": "^4.0.5",
+    "@adonisjs/session": "^4.0.6",
     "@adonisjs/view": "^3.1.0",
     "crypto-random-string": "^3.3.0",
     "luxon": "^1.25.0",
