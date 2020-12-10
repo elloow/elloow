@@ -2,6 +2,7 @@ import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Answer from 'App/Helpers/Answer'
 import AuthenticationCookieStatus from 'App/Helpers/AuthenticationCookieStatus'
 import User from 'App/Models/User'
+import { ExceptionCode } from 'Contracts/exception_code'
 
 export default class UserAuth {
   public async handle ({auth, response}: HttpContextContract, next: () => Promise<void>) {

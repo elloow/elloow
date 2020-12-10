@@ -1,6 +1,7 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import ActionToken from 'App/Helpers/ActionToken'
 import Answer from 'App/Helpers/Answer'
+import { ExceptionCode } from 'Contracts/exception_code'
 
 export default class ActionTokenShield {
   public async handle ({params, response, request}: HttpContextContract, next: () => Promise<void>, middlewareParams: string[]) {

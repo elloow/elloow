@@ -1,6 +1,7 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Answer from 'App/Helpers/Answer'
 import UserRole from 'App/Models/UserRole'
+import { ExceptionCode } from 'Contracts/exception_code'
 
 export default class UserRoleAuth {
   public async handle ({ auth, response }: HttpContextContract, next: () => Promise<void>, properties: string[]) {

@@ -11,6 +11,11 @@ Route.group(() => {
     Route.get('/:name', 'v1/OrganisationsController.show')
   }).prefix('/organisations')
 
+  //  Resource only for logged user
+  Route.group(() => {
+    Route.get('organisations', 'v1/LoggedUsersController.showOrganisations')
+  }).prefix('user').middleware(['v1_UserAuth'])
+
   Route.post('/check-action-token/:action/:action_token?', 'v1/ActionTokensController.check')
   Route.group(() => {
     Route.post('/create-user-organisation', 'v1/ActionsController.createUserAndOrganisation').middleware(['v1_ActionTokenShield:organisation-register'])
