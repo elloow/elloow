@@ -4,7 +4,7 @@
 
 # elloow
 #### *(Covid project initiative)* 
-For sports clubs. Manage the presence of players during training sessions and supporters during matches.
+Made for sports clubs. Track your players during training sessions and supporters during matches. Get participants list and follow up contamination cases.
 
 Server side project built with [AdonisJS](https://github.com/adonisjs)
 
