@@ -5,25 +5,25 @@ Route.group(() => {
     return { success: true, active: true }
   })
 
-  Route.post('/send-organisation-register-link', 'v1/MailersController.organisationRegisterLink')
+  Route.post('/send-organisation-register-link', 'MailersController.organisationRegisterLink')
 
   Route.group(() => {
-    Route.get('/:name', 'v1/OrganisationsController.show')
+    Route.get('/:name', 'OrganisationsController.show')
   }).prefix('/organisations')
 
   //  Resource only for logged user
   Route.group(() => {
-    Route.get('organisations', 'v1/LoggedUsersController.showOrganisations')
+    Route.get('organisations', 'LoggedUsersController.showOrganisations')
   }).prefix('user').middleware(['v1_UserAuth'])
 
-  Route.post('/check-action-token/:action/:action_token?', 'v1/ActionTokensController.check')
+  Route.post('/check-action-token/:action/:action_token?', 'ActionTokensController.check')
   Route.group(() => {
-    Route.post('/create-user-organisation', 'v1/ActionsController.createUserAndOrganisation').middleware(['v1_ActionTokenShield:organisation-register'])
+    Route.post('/create-user-organisation', 'ActionsController.createUserAndOrganisation').middleware(['v1_ActionTokenShield:organisation-register'])
   }).prefix('/actions')
 
   Route.group(() => {
-    Route.get('/user', 'v1/AuthUsersController.show').middleware(['v1_UserAuth'])
-    Route.post('/user', 'v1/AuthUsersController.login')
-    Route.post('/user/logout', 'v1/AuthUsersController.logout')
+    Route.get('/user', 'AuthUsersController.show').middleware(['v1_UserAuth'])
+    Route.post('/user', 'AuthUsersController.login')
+    Route.post('/user/logout', 'AuthUsersController.logout')
   }).prefix('/auth')
-}).prefix('v1')
+}).prefix('v1').namespace('App/Controllers/Http/v1')
