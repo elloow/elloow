@@ -36,6 +36,11 @@ jobs:
 
     services:
       mariadb:
+        env:
+          MYSQL_ROOT_PASSWORD: $MYSQL_PASSWORD
+          MYSQL_DATABASE: "dbtesting"
+          MYSQL_USER: "utesting"
+          MYSQL_PASSWORD: "myPassword"
         image: mariadb:latest
         ports:
           - 3306:3306
@@ -52,16 +57,15 @@ jobs:
       FRONT_HOST: "http://127.0.0.1:3000"
 
       DB_CONNECTION: "mysql"
-      MYSQL_HOST: "127.0.0.1"
+      MYSQL_HOST: "localhost"
       MYSQL_PORT: "3306"
-      MYSQL_USER: "utesting" # Service mariadb config
-      MYSQL_PASSWORD: "myPassword" # Service mariadb config
+      MYSQL_USER: "utesting"
+      MYSQL_PASSWORD: "myPassword"
       MYSQL_DB_NAME: "dbtesting"
-      MYSQL_DATABASE: $MYSQL_DB_NAME # Service mariadb config
-      MYSQL_ROOT_PASSWORD: $MYSQL_PASSWORD # Service mariadb config
+
 
       REDIS_CONNECTION: "local"
-      REDIS_HOST: "127.0.0.1"
+      REDIS_HOST: "localhost"
       REDIS_PORT: "6379"
       REDIS_PASSWORD: ""
 
