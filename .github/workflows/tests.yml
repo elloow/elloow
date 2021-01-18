@@ -57,8 +57,8 @@ jobs:
       MYSQL_USER: "utesting" # Service mariadb config
       MYSQL_PASSWORD: "myPassword" # Service mariadb config
       MYSQL_DB_NAME: "dbtesting"
-      MYSQL_DATABASE: $DB_MYSQL_DATABASE # Service mariadb config
-      MYSQL_ROOT_PASSWORD: $DB_MYSQL_PASSWORD # Service mariadb config
+      MYSQL_DATABASE: $MYSQL_DB_NAME # Service mariadb config
+      MYSQL_ROOT_PASSWORD: $MYSQL_PASSWORD # Service mariadb config
 
       REDIS_CONNECTION: "local"
       REDIS_HOST: "127.0.0.1"
