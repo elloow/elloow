@@ -31,6 +31,61 @@ jobs:
           yarn
           yarn build
 
+  migration_test:
+    runs-on: ubuntu-latest
+
+    services:
+      mariadb:
+        image: mariadb:latest
+        ports:
+          - 3306:3306
+      redis:
+        image: redis:alpine
+        ports:
+          - 6379:6379
+    env:
+      NODE_ENV: testing
+      ENV_SILENT: "true"
+      PORT: "3333"
+      HOST: "0.0.0.0"
+      APP_KEY: "s9MMYyx6dITj7YDJ5-NBm2Pa_K4ErE9X"
+
+      DB_CONNECTION: "mysql"
+      MYSQL_HOST: "127.0.0.1"
+      MYSQL_PORT: "3306"
+      MYSQL_USER: "utesting" # Service mariadb config
+      MYSQL_PASSWORD: "myPassword" # Service mariadb config
+      MYSQL_DB_NAME: "dbtesting"
+      MYSQL_DATABASE: $DB_MYSQL_DATABASE # Service mariadb config
+      MYSQL_ROOT_PASSWORD: $DB_MYSQL_PASSWORD # Service mariadb config
+
+      REDIS_CONNECTION: "local"
+      REDIS_HOST: "127.0.0.1"
+      REDIS_PORT: "6379"
+      REDIS_PASSWORD: ""
+
+      SMTP_HOST: localhost
+      SMTP_PORT: 2525
+      SMTP_USERNAME: user
+      SMTP_PASSWORD: user
+      CACHE_VIEWS: false
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build application
+        run: |
+          yarn
+          yarn build
+
+      - name: Run migrations
+        run: |
+          node ace migration:run
+
+      - name: Rollback migrations
+        run: |
+          node ace migration:rollback
+
   eslint:
     runs-on: ubuntu-latest
     steps:
