@@ -49,6 +49,7 @@ jobs:
       PORT: "3333"
       HOST: "0.0.0.0"
       APP_KEY: "s9MMYyx6dITj7YDJ5-NBm2Pa_K4ErE9X"
+      FRONT_HOST: "http://127.0.0.1:3000"
 
       DB_CONNECTION: "mysql"
       MYSQL_HOST: "127.0.0.1"
