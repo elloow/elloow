@@ -46,7 +46,7 @@ export default class DbCreateUser extends BaseCommand {
 
   private checkInput () {
     if (!this.email || !this.role) {
-      throw new Error('Please provide : ["username","password","role"]')
+      throw new Error('Please provide : ["email","role"]')
     }
   }
 
