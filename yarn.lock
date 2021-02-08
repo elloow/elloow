@@ -752,10 +752,10 @@ acorn@^8.0.4:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.0.4.tgz#7a3ae4191466a6984eee0fe3407a4f3aa9db8354"
   integrity sha512-XNP0PqF1XD19ZlLKvB7cMmnZswW4C/03pRHgirB30uSJTaS3A3V1/P4sS3HPvFmjoriPCJQs+JDSbm4bL1TxGQ==
 
-adonis-preset-ts@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/adonis-preset-ts/-/adonis-preset-ts-1.1.0.tgz#cca89a707c2f8c6b8e5772bb87dd53174732b770"
-  integrity sha512-ft5JXPN8gQNYXMyDe8Qncf6/YKh6rjWyaeSsDJ5EQLQv6mttZYAzStMpwja9IHqE2QlEprKhirEkmBB0MnZSvQ==
+adonis-preset-ts@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/adonis-preset-ts/-/adonis-preset-ts-2.0.0.tgz#ef797927e1ad2cce1117560d23f6c1cf04e5ba9b"
+  integrity sha512-n8cyGLs/0uYojPQvwUKz+E7qGHA33lmkteq9Gah5A+zBp7flvR4xPlhmmYBe8jM15eegK+hQbIZltudlyCsILw==
 
 aggregate-error@^3.0.0:
   version "3.1.0"
