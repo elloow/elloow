@@ -23,7 +23,7 @@
     "@adonisjs/core": "^5.0.4-preview-rc-2.1",
     "@adonisjs/lucid": "^10.0.0",
     "@adonisjs/mail": "^5.2.3",
-    "@adonisjs/redis": "^5.0.9",
+    "@adonisjs/redis": "^6.0.2",
     "@adonisjs/repl": "^1.1.6",
     "@adonisjs/session": "^4.0.6",
     "@adonisjs/view": "^3.1.0",
