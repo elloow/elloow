@@ -28,7 +28,7 @@
     "@adonisjs/repl": "^1.0.0",
     "@adonisjs/session": "^4.0.0",
     "@adonisjs/view": "^3.0.0",
-    "crypto-random-string": "3.3.1",
+    "crypto-random-string": "4.0.0",
     "luxon": "^1.26.0",
     "mysql": "^2.18.1",
     "oracledb": "^5.1.0",
