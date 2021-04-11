@@ -21,7 +21,7 @@ import Server from '@ioc:Adonis/Core/Server'
 |
 */
 Server.middleware.register([
-  'Adonis/Core/BodyParserMiddleware',
+  'Adonis/Core/BodyParserMiddleware'
 ])
 
 /*
@@ -43,5 +43,5 @@ Server.middleware.register([
 Server.middleware.registerNamed({
   v1_ActionTokenShield: 'App/Middleware/v1/ActionTokenShield',
   v1_UserAuth: 'App/Middleware/v1/UserAuth',
-  v1_UserRoleAuth: 'App/Middleware/v1/UserRoleAuth',
+  v1_UserRoleAuth: 'App/Middleware/v1/UserRoleAuth'
 })

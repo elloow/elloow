@@ -5,7 +5,7 @@ import User from 'App/Models/User'
 import { ExceptionCode } from 'Contracts/exception_code'
 
 export default class UserAuth {
-  public async handle ({auth, response}: HttpContextContract, next: () => Promise<void>) {
+  public async handle ({ auth, response }: HttpContextContract, next: () => Promise<void>) {
     const userAuth = auth.use('v1_user')
     try {
       await userAuth.authenticate()

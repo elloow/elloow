@@ -4,7 +4,16 @@ import Answer from 'App/Helpers/Answer'
 import { ExceptionCode } from 'Contracts/exception_code'
 
 export default class ActionTokenShield {
-  public async handle ({params, response, request}: HttpContextContract, next: () => Promise<void>, middlewareParams: string[]) {
+  public async handle (
+    {
+      params,
+      response,
+      request
+    }:
+    HttpContextContract,
+    next: () => Promise<void>,
+    middlewareParams: string[]
+  ) {
     const token = params.action_token ?? request.only(['action_token']).action_token
 
     const action = middlewareParams[0]

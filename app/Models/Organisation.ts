@@ -9,7 +9,7 @@ export default class Organisation extends BaseModel {
   @column()
   public name: string
 
-  @column({serializeAs: null})
+  @column({ serializeAs: null })
   public userId: number
 
   @manyToMany(() => User, { pivotTable: 'affiliations' })

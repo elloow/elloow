@@ -1,8 +1,12 @@
 {
+  "env": {
+    "es6": true
+  },
   "extends": [
-    "plugin:adonis/typescriptApp"
+    "plugin:adonis/typescriptApp", "standard"
   ],
   "rules": {
-    "max-len": 0
+    "no-unused-vars": "off",
+  "@typescript-eslint/no-unused-vars": "error"
   }
 }

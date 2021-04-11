@@ -12,7 +12,7 @@ export default Env.rules({
   },
   CACHE_VIEWS: Env.schema.boolean(),
   FRONT_HOST: Env.schema.string({ format: 'url' }),
-  ROOT_HOST: Env.schema.string.optional({format: 'url'}),
+  ROOT_HOST: Env.schema.string.optional({ format: 'url' }),
 
   DB_CONNECTION: Env.schema.enum(['mysql', 'pg', 'oracle']),
 
@@ -42,5 +42,5 @@ export default Env.rules({
   SMTP_HOST: Env.schema.string({ format: 'host' }),
   SMTP_PORT: Env.schema.number(),
   SMTP_USERNAME: Env.schema.string(),
-  SMTP_PASSWORD: Env.schema.string(),
+  SMTP_PASSWORD: Env.schema.string()
 })

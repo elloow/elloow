@@ -41,10 +41,10 @@ const databaseConfig: DatabaseConfig & { orm: Partial<OrmConfig> } = {
         port: Env.get('MYSQL_PORT'),
         user: Env.get('MYSQL_USER'),
         password: Env.get('MYSQL_PASSWORD', ''),
-        database: Env.get('MYSQL_DB_NAME'),
+        database: Env.get('MYSQL_DB_NAME')
       },
       healthCheck: false,
-      debug: false,
+      debug: false
     },
 
     /*
@@ -65,10 +65,10 @@ const databaseConfig: DatabaseConfig & { orm: Partial<OrmConfig> } = {
         port: Env.get('PG_PORT'),
         user: Env.get('PG_USER'),
         password: Env.get('PG_PASSWORD', ''),
-        database: Env.get('PG_DB_NAME'),
+        database: Env.get('PG_DB_NAME')
       },
       healthCheck: false,
-      debug: false,
+      debug: false
     },
 
     /*
@@ -89,11 +89,11 @@ const databaseConfig: DatabaseConfig & { orm: Partial<OrmConfig> } = {
         port: Env.get('ORACLE_PORT'),
         user: Env.get('ORACLE_USER'),
         password: Env.get('ORACLE_PASSWORD', ''),
-        database: Env.get('ORACLE_DB_NAME'),
+        database: Env.get('ORACLE_DB_NAME')
       },
       healthCheck: false,
-      debug: false,
-    },
+      debug: false
+    }
 
   },
 
@@ -110,7 +110,7 @@ const databaseConfig: DatabaseConfig & { orm: Partial<OrmConfig> } = {
   |
   */
   orm: {
-  },
+  }
 }
 
 export default databaseConfig

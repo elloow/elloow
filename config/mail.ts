@@ -49,11 +49,11 @@ const mailConfig: MailConfig = {
       auth: {
         user: Env.get('SMTP_USERNAME'),
         pass: Env.get('SMTP_PASSWORD'),
-        type: 'login',
-      },
-    },
+        type: 'login'
+      }
+    }
 
-  },
+  }
 }
 
 export default mailConfig

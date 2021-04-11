@@ -10,7 +10,8 @@ export default class UserRoleAuth {
     const role = await userAuth.user?.related('role').query().first() as UserRole
 
     if (!properties.includes(role.name)) {
-      return response.status(403).send(Answer.fail('More privileges are required for this resource',ExceptionCode.NeedPrivileges))
+      return response.status(403)
+        .send(Answer.fail('More privileges are required for this resource', ExceptionCode.NeedPrivileges))
     }
 
     await next()

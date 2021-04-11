@@ -6,7 +6,7 @@ export default class RegisterOrganisation {
   private template = 'emails/register_organisation'
 
   private templateData = {
-    url: this.url,
+    url: this.url
   }
 
   private configure (message: MessageContract) {
@@ -17,6 +17,7 @@ export default class RegisterOrganisation {
       .htmlView(this.template, this.templateData)
   }
 
+  // eslint-disable-next-line no-useless-constructor
   constructor (private url: string, private recipient: string) {}
 
   public async send () {

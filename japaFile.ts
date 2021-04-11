@@ -27,9 +27,13 @@ async function rollbackMigrations () {
 }
 
 async function initHttpClient () {
-  HttpClient.setConfig({ validateStatus: () => {
-    return true
-  }, baseURL: `http://127.0.0.1:${process.env.PORT}/`, withCredentials: true })
+  HttpClient.setConfig({
+    validateStatus: () => {
+      return true
+    },
+    baseURL: `http://127.0.0.1:${process.env.PORT}/`,
+    withCredentials: true
+  })
 }
 
 function getTestFiles () {
@@ -48,5 +52,5 @@ configure({
   files: [getTestFiles()],
   before: [runMigrations, startHttpServer, initHttpClient],
   after: [rollbackMigrations],
-  timeout: 20000,
+  timeout: 20000
 })

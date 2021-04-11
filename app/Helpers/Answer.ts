@@ -1,3 +1,15 @@
+interface BaseMessage {
+  success: boolean,
+  data?: any,
+}
+
+interface FailMessage extends BaseMessage {
+  message: string;
+  codeError?: string;
+}
+
+interface SuccessMessage extends BaseMessage { }
+
 /**
  * @summary API answer convention
  */
@@ -37,19 +49,7 @@ export default class Answer {
       success: false,
       data: data,
       message: errorMessage || '',
-      codeError: errorCode || undefined,
+      codeError: errorCode || undefined
     }
   }
 }
-
-interface BaseMessage {
-  success: boolean,
-  data?: any,
-}
-
-interface FailMessage extends BaseMessage {
-  message: string;
-  codeError?: string;
-}
-
-interface SuccessMessage extends BaseMessage { }

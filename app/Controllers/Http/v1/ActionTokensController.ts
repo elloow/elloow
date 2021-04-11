@@ -9,7 +9,7 @@ export default class ActionTokensController {
 
     try {
       if (!token) {
-        throw ''
+        throw Error
       }
       await ActionToken.verify(action, token)
     } catch (error) {
