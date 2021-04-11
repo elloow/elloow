@@ -18,7 +18,12 @@ Route.group(() => {
 
   Route.post('/check-action-token/:action/:action_token?', 'ActionTokensController.check')
   Route.group(() => {
-    Route.post('/create-user-organisation', 'ActionsController.createUserAndOrganisation').middleware(['v1_ActionTokenShield:organisation-register'])
+    Route.post(
+      '/create-user-organisation',
+      'ActionsController.createUserAndOrganisation'
+    ).middleware([
+      'v1_ActionTokenShield:organisation-register'
+    ])
   }).prefix('/actions')
 
   Route.group(() => {

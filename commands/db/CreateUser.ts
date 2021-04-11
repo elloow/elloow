@@ -5,24 +5,24 @@ import cryptoRandomString from 'crypto-random-string'
 
 export default class DbCreateUser extends BaseCommand {
   /**
-	 * Command Name is used to run the command
-	 */
+   * Command Name is used to run the command
+   */
   public static commandName = 'db:create_user'
 
   /**
-	 * Command Name is displayed in the "help" output
-	 */
+   * Command Name is displayed in the "help" output
+   */
   public static description = 'Create new user.'
 
   public static needsApplication = true
 
   public static settings = {
-    loadApp: true,
+    loadApp: true
   }
 
   @flags.string({
     description: 'User email',
-    alias: 'e',
+    alias: 'e'
   })
   public email: string
 
@@ -30,8 +30,8 @@ export default class DbCreateUser extends BaseCommand {
     description: 'User password. Random password is set if empty.',
     alias: 'p',
     defaultValue: () => {
-      return cryptoRandomString({length: (Math.random()*10)+10, type: 'base64'})
-    },
+      return cryptoRandomString({ length: (Math.random() * 10) + 10, type: 'base64' })
+    }
   })
   public password: string
 
@@ -40,7 +40,7 @@ export default class DbCreateUser extends BaseCommand {
     alias: 'r',
     defaultValue: () => {
       return 'admin'
-    },
+    }
   })
   public role: string
 

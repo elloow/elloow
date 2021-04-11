@@ -7,7 +7,7 @@ import {
   belongsTo,
   manyToMany,
   ManyToMany,
-  BelongsTo,
+  BelongsTo
 } from '@ioc:Adonis/Lucid/Orm'
 import UserRole from './UserRole'
 import Organisation from './Organisation'

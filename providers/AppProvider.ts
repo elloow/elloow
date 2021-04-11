@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import { IocContract } from '@adonisjs/fold'
 
 export default class AppProvider {

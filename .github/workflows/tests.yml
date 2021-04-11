@@ -7,8 +7,6 @@ name: "Tests"
 on:
   push:
     branches: ["*"]
-  pull_request:
-    branches: ["*"]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -31,7 +29,7 @@ jobs:
           yarn
           yarn build
 
-  migration_test:
+  unit_tests:
     runs-on: ubuntu-latest
 
     services:
@@ -83,13 +81,9 @@ jobs:
           yarn
           yarn build
 
-      - name: Run migrations
+      - name: Run tests
         run: |
-          node ace migration:run
-
-      - name: Rollback migrations
-        run: |
-          node ace migration:rollback
+          yarn test
 
   eslint:
     runs-on: ubuntu-latest

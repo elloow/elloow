@@ -9,7 +9,7 @@ export default class MailersController {
   public async organisationRegisterLink ({ request, response }: HttpContextContract) {
     const validationSchema = schema.create(
       {
-        email: schema.string({}, [rules.email()]),
+        email: schema.string({}, [rules.email()])
       })
 
     try {
@@ -19,9 +19,17 @@ export default class MailersController {
     }
 
     const data = request.only(['email'])
-    const actionToken = new ActionToken({ action: 'organisation-register', expiration: 1800, data: { email: data.email } })
+    const actionToken = new ActionToken(
+      {
+        action: 'organisation-register',
+        expiration: 1800,
+        data:
+        {
+          email: data.email
+        }
+      })
     const frontUrl = `${Env.get('FRONT_HOST')}/actions/create_organisation?action_token=${(await actionToken.store())}`
     await new RegisterOrganisation(frontUrl, data.email).send()
-    return response.send(Answer.success({email: data.email}))
+    return response.send(Answer.success({ email: data.email }))
   }
 }

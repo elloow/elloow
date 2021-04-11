@@ -9,7 +9,7 @@ export default class AuthenticationCookieStatus {
       httpOnly: false,
       sameSite: 'strict',
       secure: Env.get('NODE_ENV') === 'production',
-      maxAge: '2h',
+      maxAge: '2h'
     }
   }
 
@@ -18,10 +18,10 @@ export default class AuthenticationCookieStatus {
   }
 
   public static set (response: ResponseContract, data: {} = {}) {
-    response.plainCookie(this.cookiesName, {auth:true, data: data}, this.cookiesConfig)
+    response.plainCookie(this.cookiesName, { auth: true, data: data }, this.cookiesConfig)
   }
 
   public static remove (response: ResponseContract) {
-    response.plainCookie(this.cookiesName, {auth: false, data: null}, this.cookiesConfig)
+    response.plainCookie(this.cookiesName, { auth: false, data: null }, this.cookiesConfig)
   }
 }

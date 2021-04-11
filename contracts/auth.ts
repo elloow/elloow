@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+/* eslint-disable no-undef */
 /**
  * Contract source: https://git.io/JvyKD
  *

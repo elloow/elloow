@@ -109,7 +109,7 @@ export const http: HttpConfig = {
     maxAge: '2h',
     httpOnly: true,
     secure: false,
-    sameSite: false,
+    sameSite: false
   },
 
   /*
@@ -128,7 +128,7 @@ export const http: HttpConfig = {
   | to set the header explicitly.
   |
   */
-  forceContentNegotiationToJSON: true,
+  forceContentNegotiationToJSON: true
 }
 
 /*
@@ -182,7 +182,7 @@ export const logger: LoggerConfig = {
   | can have huge impact on performance.
   |
   */
-  prettyPrint: Env.get('NODE_ENV') === 'development',
+  prettyPrint: Env.get('NODE_ENV') === 'development'
 }
 
 /*
@@ -221,5 +221,5 @@ export const profiler: ProfilerConfig = {
   | the profiler. When whitelist is defined, then `blacklist` is ignored.
   |
   */
-  whitelist: [],
+  whitelist: []
 }

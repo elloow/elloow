@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * Contract source: https://git.io/JemcN
  *

@@ -75,7 +75,7 @@ const sessionConfig: SessionConfig = {
   cookie: {
     path: '/',
     httpOnly: true,
-    sameSite: false,
+    sameSite: false
   },
 
   /*
@@ -88,7 +88,7 @@ const sessionConfig: SessionConfig = {
   |
   */
   file: {
-    location: '',
+    location: ''
   },
 
   /*
@@ -100,7 +100,7 @@ const sessionConfig: SessionConfig = {
   | must be defined inside `config/redis.ts` file
   |
   */
-  redisConnection: 'session',
+  redisConnection: 'session'
 }
 
 export default sessionConfig
