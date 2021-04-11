@@ -14,6 +14,10 @@ Server side project built with [AdonisJS](https://github.com/adonisjs)
 ![CodeQL](https://github.com/elloow/elloow/workflows/CodeQL/badge.svg) 
 ![GitHub](https://img.shields.io/github/license/elloow/elloow)
 
+<br>
+
+[![Show documentation](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=Elloow%20API&uri=https%3A%2F%2Fgithub.com%2Felloow%2Felloow%2Fblob%2Fmain%2Finsomnia_documentation.json)
+
 </div>
 
 <br>
