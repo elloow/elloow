@@ -9,6 +9,7 @@
     "lint": "eslint . --ext=.ts",
     "lint-fix": "eslint . --fix",
     "test": "node -r @adonisjs/assembler/build/register japaFile.ts",
+    "test-dev": "MYSQL_DB_NAME=elloow-testing yarn test",
     "ts-build": "tsc"
   },
   "devDependencies": {

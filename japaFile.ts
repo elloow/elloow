@@ -4,6 +4,7 @@ import getPort from 'get-port'
 import { configure } from 'japa'
 import sourceMapSupport from 'source-map-support'
 import execa from 'execa'
+import HttpClient from './tests/HttpClient'
 
 process.env.NODE_ENV = 'testing'
 process.env.ADONIS_ACE_CWD = join(__dirname)
@@ -25,6 +26,12 @@ async function rollbackMigrations () {
   await execa.node('ace', ['migration:rollback'], { stdio: 'inherit' })
 }
 
+async function initHttpClient () {
+  HttpClient.setConfig({ validateStatus: () => {
+    return true
+  }, baseURL: `http://127.0.0.1:${process.env.PORT}/`, withCredentials: true })
+}
+
 function getTestFiles () {
   const userDefined = process.argv.slice(2)[0]
   if (!userDefined) {
@@ -39,7 +46,7 @@ function getTestFiles () {
  */
 configure({
   files: [getTestFiles()],
-  before: [runMigrations, startHttpServer],
+  before: [runMigrations, startHttpServer, initHttpClient],
   after: [rollbackMigrations],
   timeout: 20000,
 })
