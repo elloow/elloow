@@ -816,10 +816,10 @@ acorn@^8.0.4, acorn@^8.0.5:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.1.0.tgz#52311fd7037ae119cbb134309e901aa46295b3fe"
   integrity sha512-LWCF/Wn0nfHOmJ9rzQApGnxnvgfROzGilS8936rqN/lfcYkY9MYZzdMqN+2NJ4SlTc+m5HiSa+kNfDtI64dwUA==
 
-adonis-preset-ts@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/adonis-preset-ts/-/adonis-preset-ts-1.1.0.tgz#cca89a707c2f8c6b8e5772bb87dd53174732b770"
-  integrity sha512-ft5JXPN8gQNYXMyDe8Qncf6/YKh6rjWyaeSsDJ5EQLQv6mttZYAzStMpwja9IHqE2QlEprKhirEkmBB0MnZSvQ==
+adonis-preset-ts@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/adonis-preset-ts/-/adonis-preset-ts-2.1.0.tgz#3fccdee1c82c574114dc089d8c76dddf5a223054"
+  integrity sha512-cQH/NP250gOF9k3TTDhVsTOPSAvyH4MhKVZ4ryYiihA+vnP27sut1gVIrRas3Evl5d2wEgWVGI5DgdP/ZFSk0w==
 
 agent-base@6:
   version "6.0.2"
