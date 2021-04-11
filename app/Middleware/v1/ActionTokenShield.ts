@@ -19,7 +19,7 @@ export default class ActionTokenShield {
     const action = middlewareParams[0]
     try {
       if (!token) {
-        throw ''
+        throw Error
       }
       await ActionToken.verify(action, token)
     } catch (error) {
