@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@adonisjs/auth": "^5.1.1",
-    "@adonisjs/core": "^5.0.4-preview-rc-2.1",
+    "@adonisjs/core": "^5.1.5",
     "@adonisjs/lucid": "^10.0.0",
     "@adonisjs/mail": "^5.2.3",
     "@adonisjs/redis": "^5.0.9",
