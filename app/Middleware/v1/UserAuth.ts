@@ -12,8 +12,8 @@ export default class UserAuth {
 
       const user = userAuth.user as User
 
-      await user.preload('role')
-      await user.preload('organisations')
+      await user.load('role')
+      await user.load('organisations')
 
       AuthenticationCookieStatus.set(response, user.toJSON())
     } catch (error) {

@@ -8,8 +8,8 @@ export default class AuthUsersController {
     const userAuth = auth.use('v1_user')
     const user = userAuth.user as User
 
-    await user.preload('role')
-    await user.preload('organisations')
+    await user.load('role')
+    await user.load('organisations')
 
     return response.send(Answer.success({ user: user }))
   }
@@ -26,8 +26,8 @@ export default class AuthUsersController {
 
     const user = userAuth.user as User
 
-    await user.preload('role')
-    await user.preload('organisations')
+    await user.load('role')
+    await user.load('organisations')
 
     AuthenticationCookieStatus.set(response, user.toJSON())
 
