@@ -28,12 +28,6 @@ export default Env.rules({
   PG_PASSWORD: Env.schema.string.optional(),
   PG_DB_NAME: Env.schema.string.optional(),
 
-  ORACLE_HOST: Env.schema.string.optional({ format: 'host' }),
-  ORACLE_PORT: Env.schema.number.optional(),
-  ORACLE_USER: Env.schema.string.optional(),
-  ORACLE_PASSWORD: Env.schema.string.optional(),
-  ORACLE_DB_NAME: Env.schema.string.optional(),
-
   REDIS_CONNECTION: Env.schema.enum(['local']),
   REDIS_HOST: Env.schema.string({ format: 'host' }),
   REDIS_PORT: Env.schema.number(),

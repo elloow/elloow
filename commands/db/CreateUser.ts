@@ -28,19 +28,13 @@ export default class DbCreateUser extends BaseCommand {
 
   @flags.string({
     description: 'User password. Random password is set if empty.',
-    alias: 'p',
-    defaultValue: () => {
-      return cryptoRandomString({ length: (Math.random() * 10) + 10, type: 'base64' })
-    }
+    alias: 'p'
   })
   public password: string
 
   @flags.string({
     description: 'User role (default to "admin"). Example : ["admin","basic"]',
-    alias: 'r',
-    defaultValue: () => {
-      return 'admin'
-    }
+    alias: 'r'
   })
   public role: string
 
@@ -50,8 +44,14 @@ export default class DbCreateUser extends BaseCommand {
     }
   }
 
+  private setDefaultValuesIfNull () {
+    this.role = this.role ?? 'admin'
+    this.password = this.password ?? cryptoRandomString({ length: (Math.random() * 10) + 10, type: 'base64' })
+  }
+
   public async run () {
     try {
+      this.setDefaultValuesIfNull()
       this.checkInput()
 
       const role = await UserRole.findByOrFail('name', this.role)

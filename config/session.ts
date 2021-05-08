@@ -6,9 +6,21 @@
  */
 
 import Env from '@ioc:Adonis/Core/Env'
+import Application from '@ioc:Adonis/Core/Application'
 import { SessionConfig } from '@ioc:Adonis/Addons/Session'
 
 const sessionConfig: SessionConfig = {
+  /*
+  |--------------------------------------------------------------------------
+  | Enable/Disable sessions
+  |--------------------------------------------------------------------------
+  |
+  | Setting the following property to "false" will disable the session for the
+  | entire application
+  |
+  */
+  enabled: true,
+
   /*
   |--------------------------------------------------------------------------
   | Driver
@@ -24,7 +36,7 @@ const sessionConfig: SessionConfig = {
   | Note: Switching drivers will make existing sessions invalid.
   |
   */
-  driver: Env.get('SESSION_DRIVER', 'cookie') as string,
+  driver: Env.get('SESSION_DRIVER', 'cookie'),
 
   /*
   |--------------------------------------------------------------------------
@@ -45,7 +57,7 @@ const sessionConfig: SessionConfig = {
   | this value to `true` will ignore the `age`.
   |
   */
-  clearWithBrowser: true,
+  clearWithBrowser: false,
 
   /*
   |--------------------------------------------------------------------------
@@ -80,7 +92,7 @@ const sessionConfig: SessionConfig = {
 
   /*
   |--------------------------------------------------------------------------
-  | Configuration for file driver
+  | Configuration for the file driver
   |--------------------------------------------------------------------------
   |
   | The file driver needs absolute path to the directory in which sessions
@@ -88,7 +100,7 @@ const sessionConfig: SessionConfig = {
   |
   */
   file: {
-    location: ''
+    location: Application.tmpPath('sessions')
   },
 
   /*
@@ -97,10 +109,10 @@ const sessionConfig: SessionConfig = {
   |--------------------------------------------------------------------------
   |
   | The redis connection you want session driver to use. The same connection
-  | must be defined inside `config/redis.ts` file
+  | must be defined inside `config/redis.ts` file as well.
   |
   */
-  redisConnection: 'session'
+  redisConnection: 'local'
 }
 
 export default sessionConfig
