@@ -11,9 +11,9 @@ Route.get('/', async () => {
   return { APIs: { v1: { route: '/v1', state: 'active', docs: '/docs' } } }
 })
 
-Route.get('/docs', async () => {
-  const data = fs.readFileSync(`${path.dirname(__dirname)}/../insomnia_documentation.json`).toString()
-  return JSON.parse(data)
+Route.get('/docs', async ({ response }: HttpContextContract) => {
+  const insomniaDocsFileContent = fs.readFileSync(`${path.dirname(__dirname)}/../insomnia_documentation.json`, 'utf-8')
+  return response.type('json').send(insomniaDocsFileContent)
 })
 
 Route.any('*', async ({ response }: HttpContextContract) => {
