@@ -6,7 +6,7 @@
 #### *(Covid project initiative)* 
 Made for sports clubs. Track your players during training sessions and supporters during matches. Get participants list and follow up contamination cases.
 
-Server side project built with [AdonisJS](https://github.com/adonisjs)
+Server side project built with [NestJS](https://nestjs.com/)
 
 <br>
 

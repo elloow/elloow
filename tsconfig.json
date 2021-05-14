@@ -1,36 +1,15 @@
 {
-  "include": [
-    "**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "build"
-  ],
-  "extends": "./node_modules/adonis-preset-ts/tsconfig",
   "compilerOptions": {
-    "outDir": "build",
-    "rootDir": "./",
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
     "sourceMap": true,
-    "paths": {
-      "App/*": [
-        "./app/*"
-      ],
-      "Contracts/*": [
-        "./contracts/*"
-      ],
-      "Database/*": [
-        "./database/*"
-      ]
-    },
-    "types": [
-      "@adonisjs/core",
-      "@adonisjs/lucid",
-      "@adonisjs/auth",
-      "@adonisjs/session",
-      "@adonisjs/repl",
-      "@adonisjs/redis",
-      "@adonisjs/mail",
-      "@adonisjs/view"
-    ]
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true
   }
 }
