@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { HelloWorld } from './Entities/HelloWorld';
+import { HelloWorld } from './entities/HelloWorld';
 
 @ApiTags('v1')
 @Controller('api/hello-world')
