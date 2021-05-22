@@ -30,10 +30,10 @@
     "@poppinss/utils" "^3.1.1"
     semver "^7.3.5"
 
-"@adonisjs/assembler@^5.0.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@adonisjs/assembler/-/assembler-5.1.1.tgz#1fee17d74d2f3b97228c25470efa42052c8ed084"
-  integrity sha512-OxA5qUcb5ObK7x17s076iwXz+QDHsQvsi5GZv3vr//jPc3I/HcfoFwSsX0rBsw1MJLMNe78aynpC6p/1TLdaxQ==
+"@adonisjs/assembler@^5.3.0":
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/@adonisjs/assembler/-/assembler-5.3.0.tgz#1dc02a9b0ac8bad96b8a1fb50f4305d4b641dc72"
+  integrity sha512-WB+4HDbvSLibZb3Q2S0PtEEd+JFxa8Bk5xGAAdOI+l7IGVe75Beia6b66WL+BCeetDA7NZmD/tNOtN7a2SJNUQ==
   dependencies:
     "@adonisjs/application" "^5.1.2"
     "@adonisjs/env" "^3.0.2"
@@ -41,8 +41,8 @@
     "@adonisjs/require-ts" "^2.0.4"
     "@adonisjs/sink" "^5.1.3"
     "@poppinss/chokidar-ts" "^3.2.3"
-    "@poppinss/cliui" "^2.2.2"
-    "@poppinss/utils" "^3.1.1"
+    "@poppinss/cliui" "^2.2.3"
+    "@poppinss/utils" "^3.1.2"
     cpy "^8.1.2"
     emittery "^0.8.1"
     execa "^5.0.0"
@@ -82,10 +82,10 @@
   dependencies:
     "@poppinss/utils" "^3.1.1"
 
-"@adonisjs/core@^5.1.6":
-  version "5.1.6"
-  resolved "https://registry.yarnpkg.com/@adonisjs/core/-/core-5.1.6.tgz#73e71fd9c85567418092dcdd4519898f6cefdfea"
-  integrity sha512-4lmx5X7KleCFA4xF4sVGPdybqOPXi2cOkbxGub1XZeUlbGSo/59qpM7HhaEKKzw58tJFEFr6Y3GAshhkGYoZXg==
+"@adonisjs/core@^5.1.7":
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/@adonisjs/core/-/core-5.1.7.tgz#36b1f3377376d857657d658ae8d363293a2fb0f9"
+  integrity sha512-8SD72ecvh81UdAQAXFM9xcCJ2eYbpx5rL4orKACOd2CXb23FwX4puMqvP4zgrxvhvXYoPmgk7JCZFbpcC4doUg==
   dependencies:
     "@adonisjs/ace" "^11.0.1"
     "@adonisjs/application" "^5.1.2"
@@ -93,10 +93,10 @@
     "@adonisjs/encryption" "^4.0.2"
     "@adonisjs/events" "^7.0.1"
     "@adonisjs/hash" "^7.0.5"
-    "@adonisjs/http-server" "^5.3.1"
+    "@adonisjs/http-server" "^5.3.2"
     "@adonisjs/validator" "^11.0.1"
-    "@poppinss/cliui" "^2.2.2"
-    "@poppinss/utils" "^3.1.1"
+    "@poppinss/cliui" "^2.2.3"
+    "@poppinss/utils" "^3.1.2"
     fs-extra "^10.0.0"
     serve-static "^1.14.1"
     stringify-attributes "^2.0.0"
@@ -140,13 +140,13 @@
     "@poppinss/manager" "^4.0.2"
     "@poppinss/utils" "^3.1.1"
 
-"@adonisjs/http-server@^5.3.1":
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/@adonisjs/http-server/-/http-server-5.3.1.tgz#8d4baf84aee3fc7ca94d9298f28eaf90d380eb80"
-  integrity sha512-/m3VSl0rYlVLfx7G6jGjBiHchKgYtxAXTfskpHs/sfiCDPlY1FHZCJdPjWrlcTL4AZgKV18fuKsaEcKhCBT+5A==
+"@adonisjs/http-server@^5.3.2":
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/@adonisjs/http-server/-/http-server-5.3.2.tgz#44afbf8247f12b0df71be00c3e3a19476acf00ea"
+  integrity sha512-JWsLun8r9XIlg2V7krlp5hh8xhXPmBYdPNCCII96Ai5x7RsjMW8H/yYTjLQArCgHBBlBoPJ76J69bBfsHv8RAA==
   dependencies:
     "@poppinss/matchit" "^3.1.1"
-    "@poppinss/utils" "^3.1.1"
+    "@poppinss/utils" "^3.1.2"
     accepts "^1.3.7"
     co-compose "^6.1.2"
     content-disposition "^0.5.3"
@@ -430,10 +430,10 @@
     mem "^8.1.1"
     picomatch "^2.2.3"
 
-"@poppinss/cliui@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@poppinss/cliui/-/cliui-2.2.2.tgz#1d87bdc4844ed4f52ad1c2ed0bc3df9e1a33e52a"
-  integrity sha512-IuXGH+4E4mHnSaN+39z33ehXfG3MHY2M8ARMNo0P/tOc0j10+UQ4dQItz2+9luY2Yr2ehlBwoKoZwau9q6T6HA==
+"@poppinss/cliui@^2.2.2", "@poppinss/cliui@^2.2.3":
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@poppinss/cliui/-/cliui-2.2.3.tgz#338cbe40041c86f452cdd75aa8c652513898c788"
+  integrity sha512-ed3loJlDUw53r66/5tIzrDpOVN4IOGWt6yVbRzmUHbyKjMv43fbrY1KU/ar3O9Gqr08y0/Lhf/NjHJI1flH9zA==
   dependencies:
     "@poppinss/colors" "^2.1.2"
     cli-boxes "^3.0.0"
@@ -501,10 +501,10 @@
     "@poppinss/colors" "^2.1.1"
     enquirer "^2.3.6"
 
-"@poppinss/utils@^3.1.0", "@poppinss/utils@^3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@poppinss/utils/-/utils-3.1.1.tgz#bec0e0632ef146a253444921bd3da54b829beb12"
-  integrity sha512-j/5pxtN7vxvVoAr1MRaovbh/V4c/6VSNQlCSmOCeUQ0ZH/HJuFLPx2fXeM3S4013ETKkzWegCaVVVhXwlrcuhA==
+"@poppinss/utils@^3.1.0", "@poppinss/utils@^3.1.1", "@poppinss/utils@^3.1.2":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@poppinss/utils/-/utils-3.1.2.tgz#c985e70dd9289b2cf1758d5896c2492e6a924c75"
+  integrity sha512-7pUPknbv8nciTOBax+iEo3CeSmsV54TMywKkCgCokZdwpSqM+NB+eiqnr6ZKi70xb3Pd2stGjaTr8udkQVZKbQ==
   dependencies:
     "@types/bytes" "^3.1.0"
     "@types/he" "^1.1.1"
@@ -521,7 +521,7 @@
     pluralize "^8.0.0"
     require-all "^3.0.0"
     resolve-from "^5.0.0"
-    slugify "^1.5.1"
+    slugify "^1.5.3"
     truncatise "0.0.8"
 
 "@sindresorhus/is@^4.0.0":
@@ -4753,10 +4753,10 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-slugify@^1.5.1:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.5.2.tgz#8650209bdf29b4818a1cc9a9333050a41bb04b6b"
-  integrity sha512-Grpsq9/NLsae2qF2GJcoTcnDxIKp1Yt59mC+Lq+SE5xovVAckY8xG4A8jUPdY7IXhHg84u0cU/oij1XX4FXxpA==
+slugify@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.5.3.tgz#36e009864f5476bfd5db681222643d92339c890d"
+  integrity sha512-/HkjRdwPY3yHJReXu38NiusZw2+LLE2SrhkWJtmlPDB1fqFSvioYj62NkPcrKiNCgRLeGcGK7QBvr1iQwybeXw==
 
 smpltmpl@^1.0.2:
   version "1.0.2"
