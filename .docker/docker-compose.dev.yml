@@ -14,8 +14,6 @@ services:
       - mariadb
       - redis
       - maildev
-    environment:
-      DATABASE_URL: postgres://todoapp@postgres/todos
     networks:
       - elloow-network
 
