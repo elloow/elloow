@@ -1,0 +1,49 @@
+version: "3.3"
+services:
+  app:
+    image: "node:lts"
+    command: '/bin/bash -c "yarn install; exec node ace serve -w --node-args="--inspect=0.0.0.0:9229""'
+    working_dir: /home/node/app
+    volumes:
+      - ../:/home/node/app
+    ports:
+      - 4000:3333
+      - 4009:9229
+    depends_on:
+      - mariadb
+      - redis
+      - maildev
+    networks:
+      - elloow-network
+
+  mariadb:
+    image: mariadb
+    restart: always
+    ports:
+      - "4001:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456789"
+      MYSQL_DATABASE: "elloow-dev"
+      MYSQL_USER: api
+      MYSQL_PASSWORD: "123"
+    volumes:
+      - ./mariadb-volume:/var/lib/mysql
+    networks:
+      - elloow-network
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "4002:6379"
+    networks:
+      - elloow-network
+
+  maildev:
+    image: maildev/maildev
+    ports:
+      - "4003:80"
+    networks:
+      - elloow-network
+
+networks:
+  elloow-network:
