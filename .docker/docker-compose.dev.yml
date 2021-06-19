@@ -27,7 +27,7 @@ services:
       MYSQL_USER: api
       MYSQL_PASSWORD: "123"
     volumes:
-      - database:/var/lib/mysql/elloow-dev
+      - ./mariadb-volume:/var/lib/mysql
     networks:
       - elloow-network
 
@@ -47,5 +47,3 @@ services:
 
 networks:
   elloow-network:
-volumes:
-  database:
