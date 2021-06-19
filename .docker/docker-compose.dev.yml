@@ -1,8 +1,7 @@
 version: "3.3"
 services:
-  node:
-    image: node:lts
-    build: .
+  app:
+    image: "node:lts"
     command: '/bin/bash -c "yarn install; exec node ace serve -w --node-args="--inspect=0.0.0.0:9229""'
     working_dir: /home/node/app
     volumes:
