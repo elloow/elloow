@@ -1,8 +1,9 @@
 version: "3.3"
 services:
-  app:
+  api:
     image: "node:lts"
     command: '/bin/bash -c "yarn install; exec node ace serve -w --node-args="--inspect=0.0.0.0:9229""'
+    container_name: elloow_api
     working_dir: /home/node/app
     volumes:
       - ../:/home/node/app
@@ -12,12 +13,13 @@ services:
     depends_on:
       - mariadb
       - redis
-      - maildev
+      - smtp4dev
     networks:
       - elloow-network
 
   mariadb:
     image: mariadb
+    container_name: elloow_mariadb
     restart: always
     ports:
       - "4001:3306"
@@ -33,15 +35,18 @@ services:
 
   redis:
     image: "redis:alpine"
+    container_name: elloow_redis
     ports:
       - "4002:6379"
     networks:
       - elloow-network
 
-  maildev:
-    image: maildev/maildev
+  smtp4dev:
+    image: rnwood/smtp4dev
+    container_name: elloow_smtp4dev
+    restart: always
     ports:
-      - "4003:80"
+      - '4004:80'
     networks:
       - elloow-network
 
