@@ -209,19 +209,20 @@
     pretty-hrtime "^1.0.3"
     qs "^6.10.1"
 
-"@adonisjs/mail@^7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@adonisjs/mail/-/mail-7.1.1.tgz#39676844eabb9ac00b642c97586b182ff36b3628"
-  integrity sha512-C32slgGwvEAGG6oQLXJAPYM8Zb4LT74ayg4sPRX1T50+RZShT9XXaU0D5u8C9XSme3/jh3vImBm55ZYTxcvS4w==
+"@adonisjs/mail@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@adonisjs/mail/-/mail-7.2.1.tgz#836ea30e75530b42ac6aa468ad1a20d2b8980eab"
+  integrity sha512-CrusOu+RjL2ukTx7M2yNzEiBFBPxK1Uct45e9BZ+hO0vQgZs3y2/61E+w0A8ZqlJh4gtM7ZtX+afDi4vEgCAxg==
   dependencies:
-    "@poppinss/colors" "^2.1.2"
-    "@poppinss/manager" "^4.0.2"
-    "@poppinss/utils" "^3.1.1"
+    "@poppinss/colors" "^2.1.4"
+    "@poppinss/manager" "^4.0.3"
+    "@poppinss/utils" "^3.1.3"
     fastq "^1.11.0"
     get-stream "^6.0.1"
     got "^11.8.2"
+    ical-generator "^2.2.0"
     multi-part "^3.0.0"
-    nodemailer "^6.6.0"
+    nodemailer "^6.6.1"
 
 "@adonisjs/profiler@^6.0.4":
   version "6.0.4"
@@ -463,15 +464,7 @@
     raw-body "^2.4.1"
     type-is "^1.6.18"
 
-"@poppinss/colors@^2.1.1", "@poppinss/colors@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@poppinss/colors/-/colors-2.1.2.tgz#f0e2915795b3045e2d02e8a559aa868f6bbefb70"
-  integrity sha512-pZO5keKe/vzcS1uDztiAvjWolFka08Jd0HEmu6JrUdlhHvuwJ6L2x20pzP8Uyf7o44kYBp/rxbkUOtAZAM/rxQ==
-  dependencies:
-    color-support "^1.1.3"
-    kleur "^4.1.4"
-
-"@poppinss/colors@^2.1.4":
+"@poppinss/colors@^2.1.1", "@poppinss/colors@^2.1.2", "@poppinss/colors@^2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@poppinss/colors/-/colors-2.1.4.tgz#4bb3774edd0cfc40f31a5ff2507b95adc5e2caec"
   integrity sha512-exilWCx08WvIL0bg6txQJX0WqM5ELnY4Gxc8K0G29UE0mwPoZ14hAWsBSdFea/BXMQGOgV72NoQ7scbRpEt7Ug==
@@ -488,11 +481,6 @@
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@poppinss/inspect/-/inspect-1.0.1.tgz#b03df9c1204ee72e3b9dbd5c34029c39475fb21d"
   integrity sha512-kLeEaBSGhlleyYvKc7c9s3uE6xv7cwyulE0EgHf4jU/CL96h0yC4mkdw1wvC1l1PYYQozCGy46FwMBAAMOobCA==
-
-"@poppinss/manager@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@poppinss/manager/-/manager-4.0.2.tgz#831c619699dfc501758af9b46b9e9470b2e180bf"
-  integrity sha512-ex3COpcftMmeujp9BhzY94/E6PjVny2vTzxbdnKoVtN9td2qW6gFvtesMXskptrEoBEVZWBhvH6QFL+QSd16JQ==
 
 "@poppinss/manager@^4.0.3":
   version "4.0.3"
@@ -2787,6 +2775,13 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
+ical-generator@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/ical-generator/-/ical-generator-2.2.0.tgz#5a1e00eb495f693fccd4724f5ca24ce1b8de8ec8"
+  integrity sha512-rn31KfGw1x5bQUasxmqT0s1qKoPYl0dq/EH5DGWrVFMpKrNtDO+VODUaiWvtgQb1JgmDkX5fBjKfB0+zHuaNjQ==
+  dependencies:
+    uuid-random "^1.3.2"
+
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -3787,10 +3782,10 @@ node-repl-await@^0.1.2:
     acorn-static-class-features "^1.0.0"
     acorn-walk "^8.0.2"
 
-nodemailer@^6.6.0:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.6.0.tgz#ed47bb572b48d9d0dca3913fdc156203f438f427"
-  integrity sha512-ikSMDU1nZqpo2WUPE0wTTw/NGGImTkwpJKDIFPZT+YvvR9Sj+ze5wzu95JHkBMglQLoG2ITxU21WukCC/XsFkg==
+nodemailer@^6.6.1:
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.6.2.tgz#e184c9ed5bee245a3e0bcabc7255866385757114"
+  integrity sha512-YSzu7TLbI+bsjCis/TZlAXBoM4y93HhlIgo0P5oiA2ua9Z4k+E2Fod//ybIzdJxOlXGRcHIh/WaeCBehvxZb/Q==
 
 nopt@^5.0.0:
   version "5.0.0"
@@ -5423,6 +5418,11 @@ util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+uuid-random@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/uuid-random/-/uuid-random-1.3.2.tgz#96715edbaef4e84b1dcf5024b00d16f30220e2d0"
+  integrity sha512-UOzej0Le/UgkbWEO8flm+0y+G+ljUon1QWTEZOq1rnMAsxo2+SckbiZdKzAHHlVh6gJqI1TjC/xwgR50MuCrBQ==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"
