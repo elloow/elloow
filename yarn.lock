@@ -52,14 +52,14 @@
     picomatch "^2.3.0"
     slash "^3.0.0"
 
-"@adonisjs/auth@^8.0.3":
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/@adonisjs/auth/-/auth-8.0.3.tgz#61fa32a2a57ea6de23c86f3e80de3353d9b27ef7"
-  integrity sha512-Z5ZcnK79Wpvj4gSzKrjjYR3T8EAfck79tG3n3uAOzCIaYY6cqLRuhSS2dKsEWpZHY0rZUG2a1F8GxpEDzgyRwg==
+"@adonisjs/auth@^8.0.7":
+  version "8.0.7"
+  resolved "https://registry.yarnpkg.com/@adonisjs/auth/-/auth-8.0.7.tgz#8e73cb0d491dc58aa1e72b0ef8166718c5bfbf08"
+  integrity sha512-iTB9u5xzJBhdZthezxPR8+HPI0xLSseioeOeGlQumlawwS0KbuBDoJ1JkBSIy2/Yf235BzLdlB78vW3dYhNFsA==
   dependencies:
-    "@poppinss/hooks" "^3.0.3"
-    "@poppinss/utils" "^3.1.1"
-    luxon "^1.26.0"
+    "@poppinss/hooks" "^3.0.4"
+    "@poppinss/utils" "^3.1.3"
+    luxon "^1.27.0"
 
 "@adonisjs/bodyparser@^7.1.2":
   version "7.1.2"
@@ -223,14 +223,14 @@
     "@poppinss/utils" "^3.1.3"
     jest-worker "^27.0.2"
 
-"@adonisjs/redis@^7.0.2":
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/@adonisjs/redis/-/redis-7.0.2.tgz#2e8591bafdda6883279359238cc7c83aaa11987b"
-  integrity sha512-JNmkjJQYI/GPNBD+OU5vy+8xEj9is9Er3s+zqjQ+4Q5zdu9lt2oqH+W5UyNI2hGPooU1Ei74Pv+x0ai4QJQK9A==
+"@adonisjs/redis@^7.0.7":
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/@adonisjs/redis/-/redis-7.0.7.tgz#268ed77a530b5d28eeb8becd0b0345d237047d45"
+  integrity sha512-M9nn2uaE8IJ25mMkoPQtrsvfjewjZSfOr2F2RzySDq/ymoOQ5RcBDrgZ40E/JUqPqDOV5zmU2E0ClEwujQFPmg==
   dependencies:
-    "@poppinss/utils" "^3.1.1"
-    "@types/ioredis" "^4.26.1"
-    ioredis "^4.27.2"
+    "@poppinss/utils" "^3.1.3"
+    "@types/ioredis" "^4.26.4"
+    ioredis "^4.27.6"
 
 "@adonisjs/repl@^3.1.2":
   version "3.1.2"
@@ -463,7 +463,7 @@
     color-support "^1.1.3"
     kleur "^4.1.4"
 
-"@poppinss/hooks@^3.0.3", "@poppinss/hooks@^3.0.4":
+"@poppinss/hooks@^3.0.4":
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/@poppinss/hooks/-/hooks-3.0.4.tgz#5caacb51f41077326219b6ea2e941c4c2e3bafff"
   integrity sha512-vVtd8v3grQ0JcbZgvUrUIUeMqTcHkE31nJGE/jRxDEbCiusBwBJD6D16a5Wzbl+o6xRldlhIcdDn+AE8PUpuVA==
@@ -593,10 +593,10 @@
   resolved "https://registry.yarnpkg.com/@types/http-cache-semantics/-/http-cache-semantics-4.0.0.tgz#9140779736aa2655635ee756e2467d787cfe8a2a"
   integrity sha512-c3Xy026kOF7QOTn00hbIllV1dLR9hG9NkSrLQgCVs8NF6sBU+VGWjD3wLPhmh1TYAc7ugCFsvHYMN4VcBN1U1A==
 
-"@types/ioredis@^4.26.1":
-  version "4.26.1"
-  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.26.1.tgz#761f1812c48a3ecfbd9d9ecd35c49849f8693e2e"
-  integrity sha512-k9f+bda6y0ZNrwUMNYI9mqIPqjPZ4Jqc+jTRTUyhFz8aD8cHQBk+uenTKCZj9RhdfrU4sSqrot5sn5LqkAHODw==
+"@types/ioredis@^4.26.4":
+  version "4.26.5"
+  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.26.5.tgz#2e216efcb853eda3093a6e1f1fca489becf13b4c"
+  integrity sha512-aP/SUSFShzoVYcHHKKEq7+kQ5YaDsMRe64rcHCp+w4Unkfw2tico1vA6siPnMDe7+jIxuZRU/h8km6uZjEtswg==
   dependencies:
     "@types/node" "*"
 
@@ -2850,10 +2850,10 @@ interpret@^2.2.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-2.2.0.tgz#1a78a0b5965c40a5416d007ad6f50ad27c417df9"
   integrity sha512-Ju0Bz/cEia55xDwUWEa8+olFpCiQoypjnQySseKtmjNrnps3P+xfpUmGr90T7yjlVJmOtybRvPXhKMbHr+fWnw==
 
-ioredis@^4.27.2:
-  version "4.27.2"
-  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.27.2.tgz#6a79bca05164482da796f8fa010bccefd3bf4811"
-  integrity sha512-7OpYymIthonkC2Jne5uGWXswdhlua1S1rWGAERaotn0hGJWTSURvxdHA9G6wNbT/qKCloCja/FHsfKXW8lpTmg==
+ioredis@^4.27.6:
+  version "4.27.6"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.27.6.tgz#a53d427d3fe75fbd10ed7ad150ce00559df8dcf8"
+  integrity sha512-6W3ZHMbpCa8ByMyC1LJGOi7P2WiOKP9B3resoZOVLDhi+6dDBOW+KNsRq3yI36Hmnb2sifCxHX+YSarTeXh48A==
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.3.1"
@@ -3420,7 +3420,7 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-luxon@^1.26.0, luxon@^1.27.0:
+luxon@^1.27.0:
   version "1.27.0"
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.27.0.tgz#ae10c69113d85dab8f15f5e8390d0cbeddf4f00f"
   integrity sha512-VKsFsPggTA0DvnxtJdiExAucKdAnwbCCNlMM5ENvHlxubqWd0xhZcdb4XgZ7QFNhaRhilXCFxHuoObP5BNA4PA==
