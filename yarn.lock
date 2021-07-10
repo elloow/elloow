@@ -232,12 +232,12 @@
     "@types/ioredis" "^4.26.4"
     ioredis "^4.27.6"
 
-"@adonisjs/repl@^3.1.2":
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/@adonisjs/repl/-/repl-3.1.2.tgz#87f2cd9816b0583bae3c2812dcecee261dfd4366"
-  integrity sha512-4cyGl87+EyU/CTOaNfxIoHcw0Ghyyz+3BdJBQ804dGtgg88YUEqKsPq9YV0MOYFwiwopX2mqx3nAQwQTRf4JTA==
+"@adonisjs/repl@^3.1.4":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@adonisjs/repl/-/repl-3.1.4.tgz#54b4acab6482f93342745ded458a44b6ec47f643"
+  integrity sha512-xyL7raCKFcfmJvM+PVNdU6dBEzGx+7QLJTddRIuvPBlvWlijnzoIwwAmYmKIYfxL5ESiBipa7GqEGsO/8Ue0Qw==
   dependencies:
-    "@poppinss/colors" "^2.1.2"
+    "@poppinss/colors" "^2.1.4"
     node-repl-await "^0.1.2"
     parse-imports "0.0.5"
     string-width "^4.2.2"
@@ -469,7 +469,7 @@
     raw-body "^2.4.1"
     type-is "^1.6.18"
 
-"@poppinss/colors@^2.1.1", "@poppinss/colors@^2.1.2", "@poppinss/colors@^2.1.4":
+"@poppinss/colors@^2.1.1", "@poppinss/colors@^2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@poppinss/colors/-/colors-2.1.4.tgz#4bb3774edd0cfc40f31a5ff2507b95adc5e2caec"
   integrity sha512-exilWCx08WvIL0bg6txQJX0WqM5ELnY4Gxc8K0G29UE0mwPoZ14hAWsBSdFea/BXMQGOgV72NoQ7scbRpEt7Ug==
