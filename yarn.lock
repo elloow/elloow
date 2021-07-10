@@ -182,10 +182,10 @@
     abstract-logging "^2.0.1"
     pino "^6.11.3"
 
-"@adonisjs/lucid@^15.0.1":
-  version "15.0.1"
-  resolved "https://registry.yarnpkg.com/@adonisjs/lucid/-/lucid-15.0.1.tgz#a8cdf12f3ae6bc5fa88d452e80423cf3afb8e598"
-  integrity sha512-ab3tJ9JgafaXvtOzyqd83Xs6Z1raNnSZfkVJlRHvwf3rviBEAPOLVYUDtjx7QskDkDAIam+21WkUNRHcByXQcw==
+"@adonisjs/lucid@^15.0.3":
+  version "15.0.3"
+  resolved "https://registry.yarnpkg.com/@adonisjs/lucid/-/lucid-15.0.3.tgz#b7549070423e2924a8db102156903e7b7c3774ec"
+  integrity sha512-UbzmyV96X227AOwyXjJNs9/DCRHUl8jCbEJzQwRcQrfFWI0HaIH9crJYKzi1djoQOxXjM+qcTdrd48HDwnb9Vw==
   dependencies:
     "@poppinss/hooks" "^3.0.4"
     "@poppinss/utils" "^3.1.3"
@@ -194,11 +194,12 @@
     fast-deep-equal "^3.1.3"
     igniculus "^1.5.0"
     knex "^0.95.6"
-    knex-dynamic-connection "^2.1.0"
+    knex-dynamic-connection "^2.1.1"
     luxon "^1.27.0"
     macroable "^5.1.3"
     pretty-hrtime "^1.0.3"
     qs "^6.10.1"
+    slash "^3.0.0"
 
 "@adonisjs/mail@^7.2.1":
   version "7.2.1"
@@ -660,7 +661,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.4.tgz#f0ec25dbf2f0e4b18647313ac031134ca5b24b21"
   integrity sha512-1z8k4wzFnNjVK/tlxvrWuK5WMt6mydWWP7+zvH5eFep4oj+UkrfiJTRtjCeBXNpwaA/FYqqtb4/QS4ianFpIRA==
 
-"@types/node@*", "@types/node@^15.3.0":
+"@types/node@*":
   version "15.12.4"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.4.tgz#e1cf817d70a1e118e81922c4ff6683ce9d422e26"
   integrity sha512-zrNj1+yqYF4WskCMOHwN+w9iuD12+dGm0rQ35HLl9/Ouuq52cEtd0CH9qMgrdNmi5ejC1/V7vKEXYubB+65DkA==
@@ -3171,10 +3172,10 @@ jmespath@^0.15.0:
   resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
   integrity sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
 
-joycon@^2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/joycon/-/joycon-2.2.5.tgz#8d4cf4cbb2544d7b7583c216fcdfec19f6be1615"
-  integrity sha512-YqvUxoOcVPnCp0VU1/56f+iKSdvIRJYPznH22BdXV3xMk75SFXhWeJkZ8C9XxUWt1b5x2X1SxuFygW1U0FmkEQ==
+joycon@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/joycon/-/joycon-3.0.1.tgz#9074c9b08ccf37a6726ff74a18485f85efcaddaf"
+  integrity sha512-SJcJNBg32dGgxhPtM0wQqxqV0ax9k/9TaUskGDSJkSFSQOEWWvQ3zzWdGQRIUry2j1zA5+ReH13t0Mf3StuVZA==
 
 js-stringify@^1.0.2:
   version "1.0.2"
@@ -3293,7 +3294,7 @@ kleur@^4.1.4:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-4.1.4.tgz#8c202987d7e577766d039a8cd461934c01cda04d"
   integrity sha512-8QADVssbrFjivHWQU7KkMgptGTl6WAcSdlbBPY4uNF+mWr6DGcKrvY2w4FQJoXch7+fKMjj0dRrL75vk3k23OA==
 
-knex-dynamic-connection@^2.1.0:
+knex-dynamic-connection@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/knex-dynamic-connection/-/knex-dynamic-connection-2.1.1.tgz#a3c9934a51bf93e2ea6c3da2f9f3dca742f7a123"
   integrity sha512-/Lwg/T13eNRJVoSJ4e9SH3slVUmg37UHxDxVluAAKdJZxYVj8YsP2x50JSk310RmKsYbOZ8oB8SwVVEuRa4nYw==
@@ -4248,19 +4249,18 @@ pify@^4.0.1:
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
-pino-pretty@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/pino-pretty/-/pino-pretty-5.0.2.tgz#89b0c21d4fbf7cb7bf005268b4d6c6230a9a833f"
-  integrity sha512-nOoRoQXYZgURqtSwsM+FLFHBTrZRjuMKfQhELMeewjHnM8xdNhlkqLEGxBpcSCkFlfjHX3jdav9TQzQljjSL9w==
+pino-pretty@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/pino-pretty/-/pino-pretty-5.1.1.tgz#387aebbe0c4504b9e3f6f51148e36d1b336cb16d"
+  integrity sha512-bG8a6A2QcZYJXD/ZL7PXn8CDNIUP5TKyQwR9Yjzn5dpGyQ7Wbyl707Dxhx+tPT3BG6YpsXF93Hhe9EUnx0SsPw==
   dependencies:
     "@hapi/bourne" "^2.0.0"
-    "@types/node" "^15.3.0"
     args "^5.0.1"
     chalk "^4.0.0"
     dateformat "^4.5.1"
     fast-safe-stringify "^2.0.7"
     jmespath "^0.15.0"
-    joycon "^2.2.5"
+    joycon "^3.0.0"
     pump "^3.0.0"
     readable-stream "^3.6.0"
     rfdc "^1.3.0"
