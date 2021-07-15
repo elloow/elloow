@@ -295,14 +295,14 @@
     tmp-cache "^1.1.0"
     validator "^13.6.0"
 
-"@adonisjs/view@^6.0.4":
-  version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-6.0.5.tgz#960536da6da9a5f536968c88d2bfaa49eea0dd2c"
-  integrity sha512-nC+vm+R5xTuaNQgFJEDIVsdCZPm6QWkn0czFaGaOQ5DuA9DZ59a0yoZnn+Wz7Bz7NJqMRCO9nZbbxL/n49dq9Q==
+"@adonisjs/view@^6.0.6":
+  version "6.0.6"
+  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-6.0.6.tgz#fe7140224f205ceb03eb072ec895f38ca85a86ac"
+  integrity sha512-Vv0/yzbk/I6SN3MidsLMps3QpzXiwv4/gjoa8KOLIe5RSoOGO/S+dsISNqX4G4TMyozxEBHF+NW3SG2AfuJSmg==
   dependencies:
     edge-error "^2.0.4"
     edge-supercharged "^3.1.1"
-    edge.js "^5.2.2"
+    edge.js "^5.3.0"
 
 "@arr/every@^1.0.0":
   version "1.0.1"
@@ -1831,10 +1831,10 @@ edge-supercharged@^3.1.1:
     "@poppinss/utils" "^3.1.3"
     slash "^3.0.0"
 
-edge.js@^5.2.2:
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/edge.js/-/edge.js-5.2.2.tgz#14922e04b3ea1b35d03eb4b651b42703832c3ca2"
-  integrity sha512-0+yK5Dlg8o6wTlfh/elpnpTH1CCw6b8W5Lbf3zavZpgiqxZIEXhTGhIpsifUgYJhbv5Zt/XE25pxChGOOFD3Fg==
+edge.js@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/edge.js/-/edge.js-5.3.0.tgz#c76c1e0140d9227fd076089237ea5b3ad324f289"
+  integrity sha512-51gtnKkmlU2lBS9uhKwr9KR8Z8U6jfGbActdEfLsSNYK+UJgMbA6Dpxn4ZVv3AEfIFEVl6CGbJzxUcWW9aCLQw==
   dependencies:
     "@poppinss/inspect" "^1.0.1"
     "@poppinss/utils" "^3.1.3"
