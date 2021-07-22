@@ -225,13 +225,13 @@
     "@poppinss/utils" "^3.1.3"
     jest-worker "^27.0.6"
 
-"@adonisjs/redis@^7.0.7":
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/@adonisjs/redis/-/redis-7.0.7.tgz#268ed77a530b5d28eeb8becd0b0345d237047d45"
-  integrity sha512-M9nn2uaE8IJ25mMkoPQtrsvfjewjZSfOr2F2RzySDq/ymoOQ5RcBDrgZ40E/JUqPqDOV5zmU2E0ClEwujQFPmg==
+"@adonisjs/redis@^7.0.8":
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/@adonisjs/redis/-/redis-7.0.8.tgz#25223b61c253131394ab94aaf29ce12a17b338d9"
+  integrity sha512-5tADsSTAJt3uCxg942/0jjZQkNYkbFNMYfvPczsQ2NX0ixx/CmjHje+RO6o/Uhm7YBcvClMIvJUoFHqa8nnv8w==
   dependencies:
-    "@poppinss/utils" "^3.1.3"
-    "@types/ioredis" "^4.26.4"
+    "@poppinss/utils" "^3.1.5"
+    "@types/ioredis" "^4.26.6"
     ioredis "^4.27.6"
 
 "@adonisjs/repl@^3.1.2":
@@ -518,18 +518,17 @@
     "@poppinss/colors" "^2.1.4"
     enquirer "^2.3.6"
 
-"@poppinss/utils@^3.1.3":
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/@poppinss/utils/-/utils-3.1.3.tgz#4bad9bef96b1e70ea85542d11683a9892541d9db"
-  integrity sha512-A/FGhb+05UGf26rpicvyVCGabtC1Zw3LuugH9eHDYnWS4PLb8tDOdJF+yiOQ6QgGdMbYamzKUsPSgnOgSF4MGA==
+"@poppinss/utils@^3.1.3", "@poppinss/utils@^3.1.5":
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/@poppinss/utils/-/utils-3.1.5.tgz#6cac2ecca8960bd08bb408890f84580fa250e84d"
+  integrity sha512-4+wJauWZa7okjLWvT/uWftzT2uzgUw7XGO9zXrVCJbvIMPBtgIRrtRWNjOHD9Mg74XS3JZlgjVSqvNIQ4ymoqg==
   dependencies:
-    "@types/bytes" "^3.1.0"
-    "@types/he" "^1.1.1"
+    "@types/bytes" "^3.1.1"
+    "@types/he" "^1.1.2"
     buffer-alloc "^1.2.0"
     bytes "^3.1.0"
     change-case "^4.1.2"
     cuid "^2.1.8"
-    fast-safe-stringify "^2.0.7"
     fs-readdir-recursive "^1.1.0"
     he "^1.2.0"
     kind-of "^6.0.3"
@@ -538,7 +537,7 @@
     pluralize "^8.0.0"
     require-all "^3.0.0"
     resolve-from "^5.0.0"
-    slugify "^1.5.3"
+    slugify "^1.6.0"
     truncatise "0.0.8"
 
 "@sindresorhus/is@^4.0.0":
@@ -558,7 +557,7 @@
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.1.1.tgz#f0d92c12f87079ddfd1b29f614758b9696bc29e3"
   integrity sha512-XO6INPbZCxdprl+9qa/AAbFFOMzzwqYxpjPgLICrMD6C2FCw6qfJOPcBk6JqqPLSaZ/Qx87qn4rpPmPMwaAK6w==
 
-"@types/bytes@^3.1.0":
+"@types/bytes@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@types/bytes/-/bytes-3.1.1.tgz#67a876422e660dc4c10a27f3e5bcfbd5455f01d0"
   integrity sha512-lOGyCnw+2JVPKU3wIV0srU0NyALwTBJlVSx5DfMQOFuuohA8y9S8orImpuIQikZ0uIQ8gehrRjxgQC1rLRi11w==
@@ -591,7 +590,7 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/he@^1.1.1":
+"@types/he@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@types/he/-/he-1.1.2.tgz#0c8b275f36d2b8b651104638e4d45693349c3953"
   integrity sha512-kSJPcLO1x+oolc0R89pUl2kozldQ/fVQ1C1p5mp8fPoLdF/ZcBvckaTC2M8xXh3GYendXvCpy5m/a2eSbfgNgw==
@@ -601,10 +600,10 @@
   resolved "https://registry.yarnpkg.com/@types/http-cache-semantics/-/http-cache-semantics-4.0.1.tgz#0ea7b61496902b95890dc4c3a116b60cb8dae812"
   integrity sha512-SZs7ekbP8CN0txVG2xVRH6EgKmEm31BOxA07vkFaETzZz1xh+cbt8BcI0slpymvwhx5dlFnQG2rTlPVQn+iRPQ==
 
-"@types/ioredis@^4.26.4":
-  version "4.26.5"
-  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.26.5.tgz#2e216efcb853eda3093a6e1f1fca489becf13b4c"
-  integrity sha512-aP/SUSFShzoVYcHHKKEq7+kQ5YaDsMRe64rcHCp+w4Unkfw2tico1vA6siPnMDe7+jIxuZRU/h8km6uZjEtswg==
+"@types/ioredis@^4.26.6":
+  version "4.26.6"
+  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.26.6.tgz#7e332d6d24f12d79a1099834ccfa0c169ef667ed"
+  integrity sha512-Q9ydXL/5Mot751i7WLCm9OGTj5jlW3XBdkdEW21SkXZ8Y03srbkluFGbM3q8c+vzPW30JOLJ+NsZWHoly0+13A==
   dependencies:
     "@types/node" "*"
 
@@ -4792,10 +4791,10 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-slugify@^1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.5.3.tgz#36e009864f5476bfd5db681222643d92339c890d"
-  integrity sha512-/HkjRdwPY3yHJReXu38NiusZw2+LLE2SrhkWJtmlPDB1fqFSvioYj62NkPcrKiNCgRLeGcGK7QBvr1iQwybeXw==
+slugify@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.0.tgz#6bdf8ed01dabfdc46425b67e3320b698832ff893"
+  integrity sha512-FkMq+MQc5hzYgM86nLuHI98Acwi3p4wX+a5BO9Hhw4JdK4L7WueIiZ4tXEobImPqBz2sVcV0+Mu3GRB30IGang==
 
 smpltmpl@^1.0.2:
   version "1.0.2"
