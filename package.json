@@ -34,7 +34,7 @@
     "@adonisjs/core": "^5.3.1",
     "@adonisjs/lucid": "^15.0.1",
     "@adonisjs/mail": "^7.2.3",
-    "@adonisjs/redis": "^7.0.8",
+    "@adonisjs/redis": "^7.0.9",
     "@adonisjs/repl": "^3.1.5",
     "@adonisjs/session": "^6.1.2",
     "@adonisjs/view": "^6.0.8",
