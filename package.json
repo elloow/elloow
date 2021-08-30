@@ -36,7 +36,7 @@
     "@adonisjs/mail": "^7.2.3",
     "@adonisjs/redis": "^7.0.8",
     "@adonisjs/repl": "^3.1.5",
-    "@adonisjs/session": "^6.1.1",
+    "@adonisjs/session": "^6.1.2",
     "@adonisjs/view": "^6.0.8",
     "axios": "^0.21.1",
     "crypto-random-string": "3.3.1",

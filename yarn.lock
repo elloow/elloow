@@ -273,12 +273,12 @@
     rev-hash "^3.0.0"
     source-map-support "^0.5.19"
 
-"@adonisjs/session@^6.1.1":
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/@adonisjs/session/-/session-6.1.1.tgz#f3ffed30ecb82168b0660d316c46ffb053566114"
-  integrity sha512-TClg2O6wUnsoI4DhCS7F3mCRqmWO8AEh1kSrnKNl6ZqnxesLgU+30lsmMGTPfohSK/j2eU27+LpzuLFCz9Rf7Q==
+"@adonisjs/session@^6.1.2":
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/@adonisjs/session/-/session-6.1.2.tgz#60396c08fbe02de3acd8ab84d2e573c147b68653"
+  integrity sha512-xXmn93b32XruL/zJ+h9Dea/RGneMhenp369PA55VV9Fnxjxf3ElmqMnZYoJ5HYCxbey0NnNODZ9co74+PCVbtw==
   dependencies:
-    "@poppinss/utils" "^3.1.5"
+    "@poppinss/utils" "^3.2.0"
     fs-extra "^10.0.0"
 
 "@adonisjs/sink@^5.1.5":
