@@ -32,7 +32,7 @@
   "dependencies": {
     "@adonisjs/auth": "^8.0.7",
     "@adonisjs/core": "^5.3.1",
-    "@adonisjs/lucid": "^15.0.1",
+    "@adonisjs/lucid": "^16.0.0",
     "@adonisjs/mail": "^7.2.3",
     "@adonisjs/redis": "^7.0.9",
     "@adonisjs/repl": "^3.1.5",
