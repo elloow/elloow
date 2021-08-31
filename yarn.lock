@@ -310,10 +310,10 @@
     tmp-cache "^1.1.0"
     validator "^13.6.0"
 
-"@adonisjs/view@^6.0.8":
-  version "6.0.8"
-  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-6.0.8.tgz#22cc403975d1dc8d617e13796ec9c1bb134e8ac2"
-  integrity sha512-HJSPGeYgeuYKJ9dv+bVTF9jkphRZtaDE5bJXFuNdPCnJc6GS58OBugoS/DBlGpYoPe+uImPdHlEvWaETnttSuQ==
+"@adonisjs/view@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-6.1.0.tgz#0eb03cdb369cf9a98b87ad2abb7f9efbfa254cd8"
+  integrity sha512-6odN0FLSM4+0zVOQ14BTXBymDsCRrI95yGbAOUex6hMeSvBBff6f+VlH+WsiPS7xyKewI7ihZx6yRsVERBb0bw==
   dependencies:
     edge-error "^2.0.5"
     edge-supercharged "^3.1.1"
