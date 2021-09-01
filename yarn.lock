@@ -249,10 +249,10 @@
     "@types/ioredis" "^4.27.1"
     ioredis "^4.27.8"
 
-"@adonisjs/repl@^3.1.5":
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/@adonisjs/repl/-/repl-3.1.5.tgz#27eb99f8e5dcc2250435e90b964f12b8d633d8b8"
-  integrity sha512-rFc2dMzkEtYwQMVfVAEJiZcOHl0sn1s8vZ9LN6+ZpkT5rUyvRjHeY4MxrzWXcde6WSAwYlxlSpO167RwXDNCsw==
+"@adonisjs/repl@^3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@adonisjs/repl/-/repl-3.1.6.tgz#398d43ba525ee2512acb956e3b04cc32670a8f07"
+  integrity sha512-+IvyAK4KvPotYX194T6lspcTqK+6sCR8+tO1/xW5SDdU9flrMDkwFwbUNuOJv1DxgUR2YSC6GGSZNVJ3aVohmg==
   dependencies:
     "@poppinss/colors" "^2.1.5"
     node-repl-await "^0.1.2"
