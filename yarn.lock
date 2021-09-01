@@ -52,14 +52,14 @@
     picomatch "^2.3.0"
     slash "^3.0.0"
 
-"@adonisjs/auth@^8.0.7":
-  version "8.0.7"
-  resolved "https://registry.yarnpkg.com/@adonisjs/auth/-/auth-8.0.7.tgz#8e73cb0d491dc58aa1e72b0ef8166718c5bfbf08"
-  integrity sha512-iTB9u5xzJBhdZthezxPR8+HPI0xLSseioeOeGlQumlawwS0KbuBDoJ1JkBSIy2/Yf235BzLdlB78vW3dYhNFsA==
+"@adonisjs/auth@^8.0.9":
+  version "8.0.9"
+  resolved "https://registry.yarnpkg.com/@adonisjs/auth/-/auth-8.0.9.tgz#7ab0c759b42327dce5988eab9417a4ac6a8ca078"
+  integrity sha512-5lBB9N5nNUzr4rAu1yfHPK6D81ChTLH+QpRuji6Jop5QytAMMs3ZWlDPcvVur2lD7hEpm/SFQSFur9461gIXxQ==
   dependencies:
-    "@poppinss/hooks" "^3.0.4"
-    "@poppinss/utils" "^3.1.3"
-    luxon "^1.27.0"
+    "@poppinss/hooks" "^3.0.5"
+    "@poppinss/utils" "^3.2.0"
+    luxon "^2.0.2"
 
 "@adonisjs/bodyparser@^8.0.1":
   version "8.0.1"
@@ -494,7 +494,7 @@
     color-support "^1.1.3"
     kleur "^4.1.4"
 
-"@poppinss/hooks@^3.0.4", "@poppinss/hooks@^3.0.5":
+"@poppinss/hooks@^3.0.5":
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@poppinss/hooks/-/hooks-3.0.5.tgz#ae491fc11500bc9cb7e24f6b637704e7d9868505"
   integrity sha512-kazQstmIPq4n7/qjk5ms9SEiXtLEJ+EMZXxyXTupTVq7URFIUeULgXFv/F3vheLPCSzfByu/L2iO7M457RjszQ==
@@ -3441,11 +3441,6 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
-
-luxon@^1.27.0:
-  version "1.28.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.28.0.tgz#e7f96daad3938c06a62de0fb027115d251251fbf"
-  integrity sha512-TfTiyvZhwBYM/7QdAVDh+7dBTBA29v4ik0Ce9zda3Mnf8on1S5KJI8P2jKFZ8+5C0jhmr0KwJEO/Wdpm0VeWJQ==
 
 luxon@^2.0.1, luxon@^2.0.2:
   version "2.0.2"
