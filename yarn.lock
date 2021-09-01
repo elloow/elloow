@@ -217,18 +217,18 @@
     qs "^6.10.1"
     slash "^3.0.0"
 
-"@adonisjs/mail@^7.2.3":
-  version "7.2.3"
-  resolved "https://registry.yarnpkg.com/@adonisjs/mail/-/mail-7.2.3.tgz#d3e1f0fe6cff66d50ca0e4200c815c8dfd4cff24"
-  integrity sha512-JFpSuBtLIVTANbLdOuPqYlViOAU1PFqgG11uSCFjTj/V5qqGaKpFsH6AM1AVnupFIUoYChy5eMcrWOX3+BWXcQ==
+"@adonisjs/mail@^7.2.4":
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/@adonisjs/mail/-/mail-7.2.4.tgz#f7320e0726bc5cd64d57384aeb396938250e358e"
+  integrity sha512-ddoeT5rGV1JgLjMmOIFxzFkWFDc1gb59d+CQ45DNOyDboSEkSvKt5O2LBnBuTKMBjFUMUjvnYDjkb7QgbFN2fw==
   dependencies:
     "@poppinss/colors" "^2.1.5"
     "@poppinss/manager" "^4.0.4"
-    "@poppinss/utils" "^3.1.5"
-    fastq "^1.11.1"
+    "@poppinss/utils" "^3.2.0"
+    fastq "^1.12.0"
     get-stream "^6.0.1"
     got "^11.8.2"
-    ical-generator "^3.0.0-develop.4"
+    ical-generator "^3.0.0"
     multi-part "^3.0.0"
     nodemailer "^6.6.3"
 
@@ -2307,10 +2307,10 @@ fast-safe-stringify@^2.0.7, fast-safe-stringify@^2.0.8:
   resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-2.0.8.tgz#dc2af48c46cf712b683e849b2bbd446b32de936f"
   integrity sha512-lXatBjf3WPjmWD6DpIZxkeSsCOwqI0maYMpgDlx8g4U2qi4lbjA9oH/HD2a87G+KfsUmo5WbJFmqBZlPxtptag==
 
-fastq@^1.11.1, fastq@^1.6.0:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.11.1.tgz#5d8175aae17db61947f8b162cfc7f63264d22807"
-  integrity sha512-HOnr8Mc60eNYl1gzwp6r5RoUyAn5/glBolUzP/Ez6IFVPMPirxn/9phgL6zhOtaTy7ISwPvQ+wT+hfcRZh/bzw==
+fastq@^1.12.0, fastq@^1.6.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.12.0.tgz#ed7b6ab5d62393fb2cc591c853652a5c318bf794"
+  integrity sha512-VNX0QkHK3RsXVKr9KrlUv/FoTa0NdbYoHHl7uXHv2rzyHSlxjdNAKug2twd9luJxpcyNeAgf5iPPMutJO67Dfg==
   dependencies:
     reusify "^1.0.4"
 
@@ -2781,7 +2781,7 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
-ical-generator@^3.0.0-develop.4:
+ical-generator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ical-generator/-/ical-generator-3.0.0.tgz#042a7c1d2ce8cae1428bc1ea51a8dbe6b8872fcd"
   integrity sha512-PlDOOipgTlMzbfDDy+NJixAf5bzNb46wf0JXPkhnSjNQJc50y/XTOhOnQW/cp6tD+4ITHIMhkCkQ4CrUlDKMFQ==
