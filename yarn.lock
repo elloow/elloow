@@ -30,10 +30,10 @@
     "@poppinss/utils" "^3.1.5"
     semver "^7.3.5"
 
-"@adonisjs/assembler@^5.3.6":
-  version "5.3.6"
-  resolved "https://registry.yarnpkg.com/@adonisjs/assembler/-/assembler-5.3.6.tgz#82df4a60f9b330d3e80eee3e2145d3f9f7e6318b"
-  integrity sha512-rpzfrf6x3Z5LAEYqzY1791oZcDUKWk/SJlsM61KiFEtyPXbo1aL55gu305+Ylcn5sFvaqhNt3YrSl99w6Q10OQ==
+"@adonisjs/assembler@^5.3.7":
+  version "5.3.7"
+  resolved "https://registry.yarnpkg.com/@adonisjs/assembler/-/assembler-5.3.7.tgz#b54e3a1b0cfc67728ceb3f437b575782ae96104d"
+  integrity sha512-4yedF1W1gujCuxJrP8KTP0EKvKxK2fw1FqM7DcEVHD5KDqlb+2rLSc7HyegnrFHTivzWBE5GfhE+BsPlFb9U2g==
   dependencies:
     "@adonisjs/application" "^5.1.6"
     "@adonisjs/env" "^3.0.5"
