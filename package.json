@@ -37,7 +37,7 @@
     "@adonisjs/redis": "^7.0.9",
     "@adonisjs/repl": "^3.1.6",
     "@adonisjs/session": "^6.1.2",
-    "@adonisjs/view": "^6.1.0",
+    "@adonisjs/view": "^6.1.1",
     "axios": "^0.21.1",
     "crypto-random-string": "3.3.1",
     "luxon": "^2.0.2",

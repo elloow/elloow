@@ -310,14 +310,14 @@
     tmp-cache "^1.1.0"
     validator "^13.6.0"
 
-"@adonisjs/view@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-6.1.0.tgz#0eb03cdb369cf9a98b87ad2abb7f9efbfa254cd8"
-  integrity sha512-6odN0FLSM4+0zVOQ14BTXBymDsCRrI95yGbAOUex6hMeSvBBff6f+VlH+WsiPS7xyKewI7ihZx6yRsVERBb0bw==
+"@adonisjs/view@^6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@adonisjs/view/-/view-6.1.1.tgz#81f71da997c3329855e35830caeb606291f2e949"
+  integrity sha512-wSbeV7UvDA6lLJtc2nKQ3rTHRoAlj0KmRwBzIT81Lmqo6WdFIAbNqiNSwbI0SHIo+NaB3oSXmV5Brh7rGpwmPQ==
   dependencies:
-    edge-error "^2.0.5"
+    edge-error "^2.0.6"
     edge-supercharged "^3.1.1"
-    edge.js "^5.3.1"
+    edge.js "^5.3.2"
 
 "@arr/every@^1.0.0":
   version "1.0.1"
@@ -1829,27 +1829,27 @@ dotenv@^10.0.0:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
   integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
 
-edge-error@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/edge-error/-/edge-error-2.0.5.tgz#b439103d32a9f55da08891e85beec38036cc9142"
-  integrity sha512-1eJm10bEIS6u9N3dR5W0Eecnv4YVtUHralpJp0NdrVLo7H7DXx/s2DIjWoG/HsNkD2mymNVL37eZ+BgvBO5adQ==
+edge-error@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/edge-error/-/edge-error-2.0.6.tgz#7add90fd923f9bea4934f0c0ba9858ecfa2492c8"
+  integrity sha512-hXJDgkAVPypbPrwc0JSb+SOgchk9fKp7ZRF43ikM1L/XqhKcxX5oh1ilLQeC/UtBBLm85Xjb1887HQBJD+bxVw==
 
-edge-lexer@^4.0.7:
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/edge-lexer/-/edge-lexer-4.0.7.tgz#ff89deed437b4e9a565206229d86029769c835a4"
-  integrity sha512-GtmxqiusZ8mySw8FstBMz2jSt5tOW8OYUf2HMmtHQXJG/R/EgZC1DAU/5m1VUyqSNjpisGyPRls+Qn/MScmZ6g==
+edge-lexer@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/edge-lexer/-/edge-lexer-4.0.8.tgz#09eaa9d6c2c768bccd5c79c9133124cb0b894ed1"
+  integrity sha512-5DnQ6wy8Ebd3P/2XtwQryCeKgZrMEmxWz12YdjOhQb+UNq6OeXEY5AC6zaSYFpPlGCBCUB+Mz9U6ja2lkh20+Q==
   dependencies:
-    edge-error "^2.0.5"
+    edge-error "^2.0.6"
 
-edge-parser@^8.0.10:
-  version "8.0.10"
-  resolved "https://registry.yarnpkg.com/edge-parser/-/edge-parser-8.0.10.tgz#bc70fb2f90980ebde5e13559af8ba1f16e327b68"
-  integrity sha512-Othm9HRmf1uunaJO7I6g1g2EcGvEFvPsIHDosphLL2JydzP6H51QAr34KXDde7aJb+ZlXLHTti8+q+dGM7wFDQ==
+edge-parser@^8.0.11:
+  version "8.0.11"
+  resolved "https://registry.yarnpkg.com/edge-parser/-/edge-parser-8.0.11.tgz#36b25201e39c3785a5df4ffdcde89ea0734e7516"
+  integrity sha512-W3UDF9xWAMs+v7QE3J0QT5azqYWxwqUedWKWLTT1siEfl2Upg/zFE3IZ5PPOvXipFRZvW75QNxbhfK09+WrpZg==
   dependencies:
     acorn "^8.4.1"
     astring "^1.7.5"
-    edge-error "^2.0.5"
-    edge-lexer "^4.0.7"
+    edge-error "^2.0.6"
+    edge-lexer "^4.0.8"
     js-stringify "^1.0.2"
 
 edge-supercharged@^3.1.1:
@@ -1860,16 +1860,16 @@ edge-supercharged@^3.1.1:
     "@poppinss/utils" "^3.1.3"
     slash "^3.0.0"
 
-edge.js@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/edge.js/-/edge.js-5.3.1.tgz#d31ccca55c67b2f1a7af0a57286ae7054627a29e"
-  integrity sha512-TWiPo7Unaww1fYll/zMANVma08q2WoG8j7g9iK3fed5AevD0XuBl8N2L9+vCE7TKJmTm/zNP5z8bKbfGWOTRbw==
+edge.js@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/edge.js/-/edge.js-5.3.2.tgz#a528911b36eb2499e385bba5c09f5953c134a6e9"
+  integrity sha512-hpMdNZDqZPTvZYGFGQ7VPPAQR6lW3S8+R5em20X/XgtOlxwyKrfEEG7DZcFdgX+6hU7PTqn9/OFFSVdD7a0Qog==
   dependencies:
     "@poppinss/inspect" "^1.0.1"
-    "@poppinss/utils" "^3.1.4"
-    edge-error "^2.0.5"
-    edge-lexer "^4.0.7"
-    edge-parser "^8.0.10"
+    "@poppinss/utils" "^3.2.0"
+    edge-error "^2.0.6"
+    edge-lexer "^4.0.8"
+    edge-parser "^8.0.11"
     js-stringify "^1.0.2"
     macroable "^5.1.4"
     stringify-attributes "^2.0.0"
