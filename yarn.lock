@@ -198,10 +198,10 @@
     abstract-logging "^2.0.1"
     pino "^6.13.2"
 
-"@adonisjs/lucid@^16.2.0":
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/@adonisjs/lucid/-/lucid-16.2.0.tgz#ead2ed1c7fe522e7b69793cf15bfe175093b8ae9"
-  integrity sha512-DIBRouqFZm/U2b2XhzlZle9pceulYihrjNh/QJ9nw5ftsZ/ZymCxSAec3C4ZXimrK/Qsm0/SdgihrTGSTm40sw==
+"@adonisjs/lucid@^16.2.1":
+  version "16.2.1"
+  resolved "https://registry.yarnpkg.com/@adonisjs/lucid/-/lucid-16.2.1.tgz#25caa002529dfcd62c4a9a36b8a67b172e5d1cc6"
+  integrity sha512-1UAPyB3j/JkGHMT5G3YkkoCdVSaTHtm1Mn3HwSzvkAQ7d7Ffx88SYZFwpTdtT8oDfxxHunzZuTaWG0CmoUixcA==
   dependencies:
     "@poppinss/hooks" "^3.0.5"
     "@poppinss/utils" "^3.2.1"
