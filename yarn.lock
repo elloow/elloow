@@ -82,10 +82,10 @@
   dependencies:
     "@poppinss/utils" "^3.1.4"
 
-"@adonisjs/core@^5.3.2":
-  version "5.3.4"
-  resolved "https://registry.yarnpkg.com/@adonisjs/core/-/core-5.3.4.tgz#8cfa8bcb8df931c0010c54a395f591a26df8e8e5"
-  integrity sha512-ULj2LeTczE9UHzAgZMqgIyQInFOoyUL1NN2kGrDwyI2WmYTXXr2bmi7/QLGSoIStkWDfwuLsMGuplsQbm7VYcg==
+"@adonisjs/core@^5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@adonisjs/core/-/core-5.4.0.tgz#0c57dd5b0176bc7be49644f8d4ff8c8b004ad39e"
+  integrity sha512-HBeFOJu6wWXkNmHInIT6OQMtCTblT9MZK8l4tusNowKz41sE66vWIr9vE2CJBHEUfjo3MttBffVORP+RxMm1kQ==
   dependencies:
     "@adonisjs/ace" "^11.0.4"
     "@adonisjs/application" "^5.1.7"
@@ -95,12 +95,12 @@
     "@adonisjs/events" "^7.1.2"
     "@adonisjs/hash" "^7.0.8"
     "@adonisjs/http-server" "^5.5.7"
-    "@adonisjs/validator" "^12.0.1"
+    "@adonisjs/validator" "^12.1.1"
     "@poppinss/cliui" "^2.2.5"
     "@poppinss/manager" "^4.0.4"
-    "@poppinss/utils" "^3.2.0"
+    "@poppinss/utils" "^3.3.0"
     fs-extra "^10.0.0"
-    memfs "^3.2.4"
+    memfs "^3.3.0"
     serve-static "^1.14.1"
     stringify-attributes "^2.0.0"
 
@@ -297,13 +297,13 @@
     mustache "^4.2.0"
     open "^8.2.1"
 
-"@adonisjs/validator@^12.0.1":
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/@adonisjs/validator/-/validator-12.0.1.tgz#75fc9b625d013c5bfd5a469620e371c06cc6da23"
-  integrity sha512-u7fceSIvSx4bMF9k+v5kQ/dHtbfIXwz6GTOs6GN+/QTXIuM2vIpQHKlAnS3Kws1/mLMgMVITzHdi+LRyncH3Cg==
+"@adonisjs/validator@^12.1.1":
+  version "12.1.1"
+  resolved "https://registry.yarnpkg.com/@adonisjs/validator/-/validator-12.1.1.tgz#fe53a2207992d6b2ab0a94f6e89be6296d5af8bd"
+  integrity sha512-vqp3NAuJd1L1DX0AVL7T5jSmpzmjjbKAPR9hj+2uQT0oclAWEP3zIGvpmab/QFcF8y7njzjiYY1Q2CsP3dptUg==
   dependencies:
-    "@poppinss/utils" "^3.1.5"
-    "@types/luxon" "^2.0.2"
+    "@poppinss/utils" "^3.3.0"
+    "@types/luxon" "^2.0.5"
     "@types/validator" "^13.6.3"
     luxon "^2.0.1"
     normalize-url "^6.1.0"
@@ -528,10 +528,10 @@
     "@poppinss/colors" "^2.1.5"
     enquirer "^2.3.6"
 
-"@poppinss/utils@^3.1.3", "@poppinss/utils@^3.1.4", "@poppinss/utils@^3.1.5", "@poppinss/utils@^3.2.0", "@poppinss/utils@^3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@poppinss/utils/-/utils-3.2.1.tgz#5b75b7ee1991f45cafbe00f29389d0462da4c52a"
-  integrity sha512-e/jiG5JGK8PPDm7JRoWnEkeOHQQjIBMc7B++Hrl6fnCbj1rGuDK5cZMPM1Y1jL48jpId4LktiP4po9Q+rMrq6w==
+"@poppinss/utils@^3.1.3", "@poppinss/utils@^3.1.4", "@poppinss/utils@^3.1.5", "@poppinss/utils@^3.2.0", "@poppinss/utils@^3.2.1", "@poppinss/utils@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@poppinss/utils/-/utils-3.3.0.tgz#25ff7781cd3d9be509bca537c8c363659017357e"
+  integrity sha512-G2BY14daQo5t5hj2w72IoK0+hj8LE4KWQ5+SmWxRt7uIqHLRgRf0BuMj6Qtx5/cJyLySXprSCXKg72Nk1hw3uw==
   dependencies:
     "@types/bytes" "^3.1.1"
     "@types/he" "^1.1.2"
@@ -539,6 +539,7 @@
     bytes "^3.1.0"
     change-case "^4.1.2"
     cuid "^2.1.8"
+    flattie "^1.1.0"
     fs-readdir-recursive "^1.1.0"
     he "^1.2.0"
     kind-of "^6.0.3"
@@ -547,7 +548,7 @@
     pluralize "^8.0.0"
     require-all "^3.0.0"
     resolve-from "^5.0.0"
-    slugify "^1.6.0"
+    slugify "^1.6.1"
     truncatise "0.0.8"
 
 "@sindresorhus/is@^4.0.0":
@@ -655,10 +656,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/luxon@^2.0.2":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-2.0.3.tgz#03de7fa45451bffe9978700dca85fd6f242ef961"
-  integrity sha512-qhyivlWLuSnQa6EMx7W2oPiMUD4/F9BLuQynZe3jBgmfCS6Xr+Ock1+ZotN6xEkdJvdckyX+z1r5fyvi31GV5Q==
+"@types/luxon@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-2.0.5.tgz#29d3b095d55ee50df8f4cf109b16009334d9828e"
+  integrity sha512-GKrG5v16BOs9XGpouu33hOkAFaiSDi3ZaDXG9F2yAoyzHRBtksZnI60VWY5aM/yAENCccBejrxw8jDY+9OVlxw==
 
 "@types/minimatch@*":
   version "3.0.5"
@@ -2387,6 +2388,11 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.1.tgz#bbef080d95fca6709362c73044a1634f7c6e7d05"
   integrity sha512-OMQjaErSFHmHqZe+PSidH5n8j3O0F2DdnVh8JB4j4eUQ2k6KvB0qGfrKIhapvez5JerBbmWkaLYUYWISaESoXg==
 
+flattie@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/flattie/-/flattie-1.1.0.tgz#1459504209f2001c478751b4e2fb69d6b1ee3241"
+  integrity sha512-xU99gDEnciIwJdGcBmNHnzTJ/w5AT+VFJOu6sTB6WM8diOYNA3Sa+K1DiEBQ7XH4QikQq3iFW1U+jRVcotQnBw==
+
 follow-redirects@^1.14.0:
   version "1.14.3"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.3.tgz#6ada78118d8d24caee595595accdc0ac6abd022e"
@@ -3496,10 +3502,10 @@ mem@^8.1.1:
     map-age-cleaner "^0.1.3"
     mimic-fn "^3.1.0"
 
-memfs@^3.2.4:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/memfs/-/memfs-3.2.4.tgz#1108c28d2e9137daf5a5586af856c3e18c1c64b2"
-  integrity sha512-2mDCPhuduRPOxlfgsXF9V+uqC6Jgz8zt/bNe4d4W7d5f6pCzHrWkxLNr17jKGXd4+j2kQNsAG2HARPnt74sqVQ==
+memfs@^3.2.4, memfs@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/memfs/-/memfs-3.3.0.tgz#4da2d1fc40a04b170a56622c7164c6be2c4cbef2"
+  integrity sha512-BEE62uMfKOavX3iG7GYX43QJ+hAeeWnwIAuJ/R6q96jaMtiLzhsxHJC8B1L7fK7Pt/vXDRwb3SG/yBpNGDPqzg==
   dependencies:
     fs-monkey "1.0.3"
 
@@ -4841,10 +4847,10 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-slugify@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.0.tgz#6bdf8ed01dabfdc46425b67e3320b698832ff893"
-  integrity sha512-FkMq+MQc5hzYgM86nLuHI98Acwi3p4wX+a5BO9Hhw4JdK4L7WueIiZ4tXEobImPqBz2sVcV0+Mu3GRB30IGang==
+slugify@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.1.tgz#a5fcaef29f4e57c6e932ce7044b6ffd9cf81b641"
+  integrity sha512-5ofqMTbetNhxlzjYYLBaZFQd6oiTuSkQlyfPEFIMwgUABlZQ0hbk5xIV9Ydd5jghWeRoO7GkiJliUvTpLOjNRA==
 
 smpltmpl@^1.0.2:
   version "1.0.2"
