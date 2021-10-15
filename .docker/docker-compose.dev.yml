@@ -16,6 +16,7 @@ services:
       - smtp4dev
     networks:
       - elloow-network
+    user: "${UID}:${GID}"
 
   mariadb:
     image: mariadb

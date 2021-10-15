@@ -4,7 +4,10 @@
   ],
   "exclude": [
     "node_modules",
-    "build"
+    "build",
+    ".docker",
+    ".github",
+    ".vscode"
   ],
   "extends": "./node_modules/adonis-preset-ts/tsconfig",
   "compilerOptions": {
