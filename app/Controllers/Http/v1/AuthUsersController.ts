@@ -4,6 +4,17 @@ import AuthenticationCookieStatus from 'App/Helpers/AuthenticationCookieStatus'
 import User from 'App/Models/User'
 
 export default class AuthUsersController {
+  /**
+   * @swagger
+   * /v1/auth/user:
+   *   tags:
+   *     - Authentication
+   *   get:
+   *     summary: Get current authenticated user
+   *     responses:
+   *       200:
+   *         description: User entity
+   */
   public async show ({ auth, response }: HttpContextContract) {
     const userAuth = auth.use('v1_user')
     const user = userAuth.user as User
@@ -21,7 +32,9 @@ export default class AuthUsersController {
     try {
       await userAuth.attempt(userData.email, userData.password)
     } catch (error) {
-      return response.status(401).send(Answer.fail('Bad credentials', 'LOGIN_FAILED'))
+      return response
+        .status(401)
+        .send(Answer.fail('Bad credentials', 'LOGIN_FAILED'))
     }
 
     const user = userAuth.user as User

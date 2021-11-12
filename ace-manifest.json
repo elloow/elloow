@@ -156,7 +156,7 @@
           "name": "connection",
           "propertyName": "connection",
           "type": "string",
-          "description": "Define a custom database connection for the migration"
+          "description": "The connection flag is used to lookup the directory for the migration file"
         },
         {
           "name": "folder",
@@ -309,6 +309,17 @@
           "description": "Name of the mailer class"
         }
       ],
+      "aliases": [],
+      "flags": []
+    },
+    "swagger:generate": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "adonis5-swagger/build/commands/GenerateSwaggerFile",
+      "commandName": "swagger:generate",
+      "description": "Generate swagger file",
+      "args": [],
       "aliases": [],
       "flags": []
     }

@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   api:
-    image: "node:lts"
+    image: "node:16"
     command: '/bin/bash -c "yarn install; exec node ace serve -w --node-args="--inspect=0.0.0.0:9229""'
     container_name: elloow_api
     working_dir: /home/node/app
