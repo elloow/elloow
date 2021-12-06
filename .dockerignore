@@ -1,9 +1,0 @@
-build
-node_modules
-.git
-*.log
-.env
-Dockerfile
-.insomnia
-.github
-.vscode
