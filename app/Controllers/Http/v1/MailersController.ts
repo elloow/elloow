@@ -4,6 +4,7 @@ import ActionToken from 'App/Helpers/ActionToken'
 import Answer from 'App/Helpers/Answer'
 import { rules, schema } from '@ioc:Adonis/Core/Validator'
 import Env from '@ioc:Adonis/Core/Env'
+import { ExceptionCode } from 'Contracts/exception_code'
 
 export default class MailersController {
   public async organisationRegisterLink ({ request, response }: HttpContextContract) {
@@ -15,7 +16,7 @@ export default class MailersController {
     try {
       await request.validate({ schema: validationSchema })
     } catch (error) {
-      return response.status(422).send(Answer.fail(error.messages, 'VALIDATION_FIELDS_FAILED'))
+      return response.status(422).send(Answer.fail(error.messages, ExceptionCode.ValidationFieldsFailed))
     }
 
     const data = request.only(['email'])

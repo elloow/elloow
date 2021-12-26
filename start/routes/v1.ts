@@ -8,7 +8,7 @@ Route.group(() => {
   Route.post('/send-organisation-register-link', 'MailersController.organisationRegisterLink')
 
   Route.group(() => {
-    Route.get('/:name', 'OrganisationsController.show')
+    Route.get('/:name', 'Organisations/OrganisationsController.show')
   }).prefix('/organisations')
 
   //  Resource only for logged user
@@ -20,7 +20,7 @@ Route.group(() => {
   Route.group(() => {
     Route.post(
       '/create-user-organisation',
-      'ActionsController.createUserAndOrganisation'
+      'Actions/ActionsController.createUserAndOrganisation'
     ).middleware([
       'v1_ActionTokenShield:organisation-register'
     ])
