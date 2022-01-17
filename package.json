@@ -30,7 +30,7 @@
     "youch-terminal": "^1.1.1"
   },
   "dependencies": {
-    "@adonisjs/auth": "^8.0.9",
+    "@adonisjs/auth": "^8.0.10",
     "@adonisjs/core": "^5.4.0",
     "@adonisjs/lucid": "^16.2.1",
     "@adonisjs/mail": "^7.2.4",
@@ -47,6 +47,6 @@
     "phc-argon2": "^1.1.0",
     "proxy-addr": "^2.0.6",
     "reflect-metadata": "^0.1.13",
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.21"
   }
 }
