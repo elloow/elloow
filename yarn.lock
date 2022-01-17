@@ -52,10 +52,10 @@
     picomatch "^2.3.0"
     slash "^3.0.0"
 
-"@adonisjs/auth@^8.0.9":
-  version "8.0.9"
-  resolved "https://registry.yarnpkg.com/@adonisjs/auth/-/auth-8.0.9.tgz#7ab0c759b42327dce5988eab9417a4ac6a8ca078"
-  integrity sha512-5lBB9N5nNUzr4rAu1yfHPK6D81ChTLH+QpRuji6Jop5QytAMMs3ZWlDPcvVur2lD7hEpm/SFQSFur9461gIXxQ==
+"@adonisjs/auth@^8.0.10":
+  version "8.0.10"
+  resolved "https://registry.yarnpkg.com/@adonisjs/auth/-/auth-8.0.10.tgz#7d89aac9a57a6ce79cfff58e1a45af5cda65cfef"
+  integrity sha512-jE2C0btUresr1pRV1P8NAehSJlebJ+TlrQp1p1ws52AQ5h4ayjzTniZBtq6pSgm5uv6TAEQ7Mw7ZfTOwaA8MBQ==
   dependencies:
     "@poppinss/hooks" "^3.0.5"
     "@poppinss/utils" "^3.2.0"
