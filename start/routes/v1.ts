@@ -2,7 +2,7 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.group(() => {
   Route.get('/', async () => {
-    return { success: true, active: true }
+    return{ active: true, description: "Elloow API v1" }
   })
 
   Route.post('/send-organisation-register-link', 'MailersController.organisationRegisterLink')
@@ -31,4 +31,4 @@ Route.group(() => {
     Route.post('/user', 'AuthUsersController.login')
     Route.post('/user/logout', 'AuthUsersController.logout')
   }).prefix('/auth')
-}).prefix('v1').namespace('App/Controllers/Http/v1')
+}).prefix('v1').namespace('App/Controllers/Http/v1').middleware(['v1_ApiResponseConvention'])

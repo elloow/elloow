@@ -15,14 +15,14 @@ export default class AuthUsersController {
    *       200:
    *         description: User entity
    */
-  public async show ({ auth, response }: HttpContextContract) {
+  public async show ({ auth }: HttpContextContract) {
     const userAuth = auth.use('v1_user')
     const user = userAuth.user as User
 
     await user.load('role')
     await user.load('organisations')
 
-    return response.send(Answer.success({ user: user }))
+    return { user: user }
   }
 
   public async login ({ auth, request, response }: HttpContextContract) {
@@ -44,7 +44,7 @@ export default class AuthUsersController {
 
     AuthenticationCookieStatus.set(response, user.toJSON())
 
-    return response.send(Answer.success({ user: user }))
+    return { user: user }
   }
 
   public async logout ({ auth, response }: HttpContextContract) {
@@ -54,6 +54,6 @@ export default class AuthUsersController {
 
     AuthenticationCookieStatus.remove(response)
 
-    return response.send(Answer.success({}))
+    return response.send({})
   }
 }

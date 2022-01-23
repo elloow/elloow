@@ -6,7 +6,7 @@ export default class OrganisationsController {
   public async show ({ params, response }: HttpContextContract) {
     try {
       const org = await Organisation.query().where('name', params.name).firstOrFail()
-      return response.send(Answer.success(org))
+      return response.send(org)
     } catch (error) {
       return response.status(404).send(Answer.fail('Organisation not found', 'ENTRY_NOT_FOUND'))
     }

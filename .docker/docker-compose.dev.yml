@@ -16,6 +16,8 @@ services:
       - smtp4dev
     networks:
       - elloow-network
+    environment:
+      - NODE_ENV=development
     user: "${UID}:${GID}"
 
   mariadb:

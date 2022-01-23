@@ -31,6 +31,6 @@ export default class MailersController {
       })
     const frontUrl = `${Env.get('FRONT_HOST')}/actions/create_organisation?action_token=${(await actionToken.store())}`
     await new RegisterOrganisation(frontUrl, data.email).send()
-    return response.send(Answer.success({ email: data.email }))
+    return { email: data.email }
   }
 }

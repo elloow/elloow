@@ -1,10 +1,9 @@
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import HttpException from 'App/Exceptions/HttpException'
 import ActionToken from 'App/Helpers/ActionToken'
-import Answer from 'App/Helpers/Answer'
 
 export default class ActionTokensController {
-  public async check ({ request, response, params }: HttpContextContract) {
+  public async check ({ request, params }: HttpContextContract) {
     const token =
       params.action_token ?? request.only(['action_token']).action_token
     const action = params.action
@@ -24,6 +23,6 @@ export default class ActionTokensController {
 
     const data = await ActionToken.getData(action, token)
 
-    return response.send(Answer.success(data))
+    return data
   }
 }
