@@ -2,7 +2,7 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.group(() => {
   Route.get('/', async () => {
-    return{ active: true, description: "Elloow API v1" }
+    return { active: true, description: 'Elloow API v1' }
   })
 
   Route.post('/send-organisation-register-link', 'MailersController.organisationRegisterLink')

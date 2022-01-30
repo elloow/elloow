@@ -15,11 +15,11 @@ import Answer from 'App/Helpers/Answer'
 |
 */
 export default class HttpException extends Exception {
-    public async handle(error: this, ctx: HttpContextContract){
-        ctx.response.status(error.status).send(
-            Answer.fail(
-                error.message, error.code, null
-            )
-        )
-    }
+  public async handle (error: this, ctx: HttpContextContract) {
+    ctx.response.status(error.status).send(
+      Answer.fail(
+        error.message, error.code, null
+      )
+    )
+  }
 }
